@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZeltmannHome — Florence & Isolde (V1)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    // Tailwind CDN config: custom palette
+    window.tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: {
+              sand: '#DCC8A1',
+              navy: '#0B2A44',
+              bgwhite: '#f9fafb'
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'ui-sans-serif', 'system-ui']
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>html,body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}</style>
+</head>
+<body class="bg-bgwhite text-navy">
+  <header class="fixed w-full bg-white/60 backdrop-blur-sm border-b z-30">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <h1 class="font-serif text-2xl text-navy">ZeltmannHome</h1>
+      <nav class="space-x-4 text-sm font-medium">
+        <a href="#hero" class="hover:underline">Inicio</a>
+        <a href="#apartments" class="hover:underline">Propiedades</a>
+        <a href="#location" class="hover:underline">Ubicación</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section id="hero" class="relative">
+      <div class="h-[64vh] md:h-[72vh] bg-cover bg-center" style="background-image:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1492273417273197297/original/21bbe6d9-c39f-44b9-b28f-44480f223f96.jpeg?im_w=1440&width=1440&quality=80&auto=webp')">
+        <div class="w-full h-full bg-gradient-to-b from-transparent to-navy/30 flex items-end">
+          <div class="max-w-6xl mx-auto p-6 md:p-12 text-white">
+            <h2 class="font-serif text-4xl md:text-6xl drop-shadow">ZeltmannHome — Nerja</h2>
+            <p class="mt-3 max-w-2xl text-sm md:text-base">Boutique stays: Florence y Isolde. Espacios acogedores, a pocos pasos de playas y miradores.</p>
+            <div class="mt-6 flex gap-3">
+              <a href="#apartments" class="inline-flex items-center gap-2 px-4 py-2 bg-sand text-navy rounded-lg shadow-sm hover:shadow-md transition">Check Availability</a>
+              <a href="https://wa.me/34609549664?text=Hola,%20quiero%20reservar%20%28Casa%20Florence%20%2F%20Casa%20Isolde%29%20en%20ZeltmannHome.%20Fechas:%20%5BDD%2FMM%2FAAAA%20-%20DD%2FMM%2FAAAA%5D.%20%C2%BFEst%C3%A1%20disponible%3F%20Gracias." target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 border border-white/30 rounded-lg hover:bg-white/10 transition">Reserva Directa - Mejor Precio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartments -->
+    <section id="apartments" class="max-w-6xl mx-auto p-6 md:p-12">
+      <h3 class="font-serif text-3xl mb-6">Propiedades</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Florence -->
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden transform hover:-translate-y-1 transition">
+          <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1492273417273197297/original/21bbe6d9-c39f-44b9-b28f-44480f223f96.jpeg?im_w=720&width=720&quality=70&auto=webp" loading="lazy" alt="Casa Florence" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <div class="flex items-start justify-between">
+              <h4 class="font-serif text-xl">Casa Florence</h4>
+              <span class="text-sm text-gray-500">6 huéspedes</span>
+            </div>
+            <p class="mt-3 text-sm text-gray-700">Apartamento acogedor y luminoso en Nerja, situado en una zona tranquila y de fácil acceso, a pocos pasos de playas, calas escondidas y miradores.</p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs">
+              <li class="px-2 py-1 bg-bgwhite rounded-md border">Cocina</li>
+              <li class="px-2 py-1 bg-bgwhite rounded-md border">Wifi</li>
+              <li class="px-2 py-1 bg-bgwhite rounded-md border">TV</li>
+              <li class="px-2 py-1 bg-bgwhite rounded-md border">Lavadora</li>
+              <li class="px-2 py-1 bg-bgwhite rounded-md border">Aire acondicionado</li>
+            </ul>
+            <div class="mt-6 flex gap-3">
+              <a href="https://es.airbnb.com/rooms/1492273417273197297" target="_blank" rel="noopener" class="text-sm text-navy underline">Ver ficha en Airbnb</a>
+              <a href="https://wa.me/34609549664?text=Hola,%20quiero%20reservar%20Casa%20Florence%20en%20ZeltmannHome.%20Fechas:%20%5BDD%2FMM%2FAAAA%20-%20DD%2FMM%2FAAAA%5D.%20Gracias." class="ml-auto inline-flex items-center gap-2 px-3 py-2 bg-sand text-navy rounded-lg hover:shadow-md transition" target="_blank" rel="noopener">Reserva Florence</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Isolde -->
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden transform hover:-translate-y-1 transition">
+          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1438473117240724145/original/7d6cb47e-fb34-40be-863b-68f16a44c43c.jpeg?im_w=720&width=720&quality=70&auto=webp" loading="lazy" alt="Casa Isolde" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <div class="flex items-start justify-between">
+              <h4 class="font-serif text-xl">Casa Isolde</h4>
+              <span class="text-sm text-gray-500">Consultar</span>
+            </div>
+            <p class="mt-3 text-sm text-gray-700">Ficha disponible en Airbnb. Consulta la ficha para detalles completos sobre capacidad y amenidades.</p>
+            <div class="mt-6 flex gap-3">
+              <a href="https://es.airbnb.com/rooms/1438473117240724145" target="_blank" rel="noopener" class="text-sm text-navy underline">Ver ficha en Airbnb</a>
+              <a href="https://wa.me/34609549664?text=Hola,%20quiero%20reservar%20Casa%20Isolde%20en%20ZeltmannHome.%20Fechas:%20%5BDD%2FMM%2FAAAA%20-%20DD%2FMM%2FAAAA%5D.%20Gracias." class="ml-auto inline-flex items-center gap-2 px-3 py-2 bg-sand text-navy rounded-lg hover:shadow-md transition" target="_blank" rel="noopener">Reserva Isolde</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="max-w-6xl mx-auto p-6 md:p-12">
+      <h3 class="font-serif text-3xl mb-6">Ubicación</h3>
+      <p class="text-sm text-gray-700 mb-4">Referencias extraídas de las fichas: Casa Florence está "a pocos pasos de playas" y cerca de miradores. Para distancias exactas necesitamos coordenadas.</p>
+      <div id="map" class="w-full h-64 rounded-xl shadow-sm"></div>
+      <p class="mt-4 text-sm text-gray-600">Puntos de interés: Playa de Burriana, Balcón de Europa.</p>
+    </section>
+
+    <!-- Reviews & FAQ -->
+    <section id="faq" class="max-w-6xl mx-auto p-6 md:p-12">
+      <h3 class="font-serif text-3xl mb-6">Reseñas & FAQ</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h4 class="font-semibold">Reseña destacada</h4>
+          <p class="mt-3 text-sm text-gray-700">"Todo genial. Mike muy agradable y la casa excelente!!! La recomiendo muchísimo!" — Andrea</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h4 class="font-semibold">Preguntas frecuentes</h4>
+          <dl class="mt-3 text-sm text-gray-700">
+            <dt class="font-medium">¿Cómo reservo?</dt>
+            <dd class="mt-1">Usa el botón "Reserva Directa" por WhatsApp o visita la ficha en Airbnb.</dd>
+            <dt class="font-medium mt-3">Cancelación</dt>
+            <dd class="mt-1">Consulta la política de cancelación en la ficha de Airbnb correspondiente.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/34609549664?text=Hola,%20quiero%20reservar%20(Casa%20Florence%20%2F%20Casa%20Isolde)%20en%20ZeltmannHome.%20Fechas:%20[DD/MM/AAAA%20-%20DD/MM/AAAA].%20Gracias." target="_blank" rel="noopener" class="fixed right-6 bottom-6 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg font-semibold">Reserva Directa - Mejor Precio</a>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Simple map placeholder centered on Nerja approximate coords (36.7437, -3.8638)
+    var map = L.map('map', {scrollWheelZoom:false}).setView([36.7437, -3.8638], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; OpenStreetMap contributors'}).addTo(map);
+    L.marker([36.7437, -3.8638]).addTo(map).bindPopup('Nerja (aprox.)');
+
+    // Fade-in sections
+    const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('opacity-100','translate-y-0');io.unobserve(e.target)}})},{threshold:0.12});
+    document.querySelectorAll('section').forEach(s=>{s.classList.add('opacity-0','translate-y-6','transition','duration-700'); io.observe(s)});
+  </script>
+</body>
+</html>
