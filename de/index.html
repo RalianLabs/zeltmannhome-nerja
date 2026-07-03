@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="de">
 <head>
 <meta charset="utf-8">
   <base href="/">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ZeltmannHome · Casa Florence & Casa Isolde — Apartamentos boutique en Nerja</title>
-  <meta name="description" content="Dos apartamentos boutique en Nerja (Costa del Sol): Casa Florence y Casa Isolde. Reserva directa sin comisiones. Playa a 12 min a pie, guía local de la familia Zeltmann.">
+  <title>ZeltmannHome · Casa Florence & Casa Isolde — Boutique-Apartments in Nerja</title>
+  <meta name="description" content="Zwei Boutique-Apartments in Nerja (Costa del Sol): Casa Florence und Casa Isolde. Direkt buchen, ohne Gebühren. Strand in 12 Min. zu Fuß, lokaler Guide der Familie Zeltmann.">
   <meta property="og:title" content="ZeltmannHome · Nerja">
-  <meta property="og:description" content="Dos apartamentos boutique en Nerja (Costa del Sol): Casa Florence y Casa Isolde. Reserva directa sin comisiones. Playa a 12 min a pie, guía local de la familia Zeltmann.">
+  <meta property="og:description" content="Zwei Boutique-Apartments in Nerja (Costa del Sol): Casa Florence und Casa Isolde. Direkt buchen, ohne Gebühren. Strand in 12 Min. zu Fuß, lokaler Guide der Familie Zeltmann.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0B2A44">
-  <link rel="canonical" href="https://zeltmannhome-nerja.vercel.app/">
+  <link rel="canonical" href="https://zeltmannhome-nerja.vercel.app/de/">
   <link rel="alternate" hreflang="es" href="https://zeltmannhome-nerja.vercel.app/">
   <link rel="alternate" hreflang="en" href="https://zeltmannhome-nerja.vercel.app/en/">
   <link rel="alternate" hreflang="de" href="https://zeltmannhome-nerja.vercel.app/de/">
@@ -2692,7 +2692,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 <!-- ===== NAV ===== -->
 <header style="{{ navStyle }}">
   <div style="max-width:1220px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px">
-    <a href="#" onClick="{{ goHome }}" aria-label="ZeltmannHome, inicio" style="display:flex;align-items:center;gap:12px">
+    <a href="#" onClick="{{ goHome }}" aria-label="ZeltmannHome, Startseite" style="display:flex;align-items:center;gap:12px">
       <span style="width:38px;height:38px;border:1px solid rgba(220,200,161,.9);border-radius:50%;display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:600;font-size:15px;letter-spacing:.02em;color:{{ navInk }}">ZH</span>
       <span style="display:flex;flex-direction:column;line-height:1">
         <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:19px;letter-spacing:.01em;color:{{ navInk }}">ZeltmannHome</span>
@@ -2703,10 +2703,10 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
       <sc-for list="{{ navLinks }}" as="link" hint-placeholder-count="4">
         <a href="#" onClick="{{ link.onClick }}" style="padding:9px 14px;font-size:13.5px;font-weight:500;letter-spacing:.01em;color:{{ navInk }};opacity:.82">{{ link.label }}</a>
       </sc-for>
-      <span style="display:inline-flex;align-items:center;gap:9px;margin:0 4px 0 10px;font-size:11.5px;font-weight:600;letter-spacing:.06em"><span style="color:{{ navInk }};opacity:1;text-decoration:underline;text-underline-offset:3px">ES</span><a href="/en/" hreflang="en" style="color:{{ navInk }};opacity:.5;text-decoration:none">EN</a><a href="/de/" hreflang="de" style="color:{{ navInk }};opacity:.5;text-decoration:none">DE</a><a href="/fr/" hreflang="fr" style="color:{{ navInk }};opacity:.5;text-decoration:none">FR</a><a href="/it/" hreflang="it" style="color:{{ navInk }};opacity:.5;text-decoration:none">IT</a><a href="/ru/" hreflang="ru" style="color:{{ navInk }};opacity:.5;text-decoration:none">RU</a></span>
-      <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="margin-left:8px;background:#DCC8A1;color:#0B2A44;padding:11px 20px;border-radius:2px;font-size:13.5px;font-weight:600;border:1px solid #DCC8A1;letter-spacing:.01em">Reservar</a>
+      <span style="display:inline-flex;align-items:center;gap:9px;margin:0 4px 0 10px;font-size:11.5px;font-weight:600;letter-spacing:.06em"><a href="/" hreflang="es" style="color:{{ navInk }};opacity:.5;text-decoration:none">ES</a><a href="/en/" hreflang="en" style="color:{{ navInk }};opacity:.5;text-decoration:none">EN</a><span style="color:{{ navInk }};opacity:1;text-decoration:underline;text-underline-offset:3px">DE</span><a href="/fr/" hreflang="fr" style="color:{{ navInk }};opacity:.5;text-decoration:none">FR</a><a href="/it/" hreflang="it" style="color:{{ navInk }};opacity:.5;text-decoration:none">IT</a><a href="/ru/" hreflang="ru" style="color:{{ navInk }};opacity:.5;text-decoration:none">RU</a></span>
+      <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="margin-left:8px;background:#DCC8A1;color:#0B2A44;padding:11px 20px;border-radius:2px;font-size:13.5px;font-weight:600;border:1px solid #DCC8A1;letter-spacing:.01em">Buchen</a>
     </nav>
-    <button onClick="{{ toggleMenu }}" aria-label="Abrir menú" aria-expanded="{{ menuOpen }}" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:1px solid rgba(11,42,68,.2);border-radius:2px;cursor:pointer;color:{{ navInk }}" data-mobilebtn>
+    <button onClick="{{ toggleMenu }}" aria-label="Menü öffnen" aria-expanded="{{ menuOpen }}" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:1px solid rgba(11,42,68,.2);border-radius:2px;cursor:pointer;color:{{ navInk }}" data-mobilebtn>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
     </button>
   </div>
@@ -2717,15 +2717,15 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <div style="position:fixed;inset:0;z-index:120;background:#0B2A44;display:flex;flex-direction:column;padding:24px;animation:zhFade .3s ease">
     <div style="display:flex;justify-content:space-between;align-items:center;height:48px">
       <span style="font-family:'Playfair Display',serif;font-size:20px;color:#F7F5F2">ZeltmannHome</span>
-      <button onClick="{{ toggleMenu }}" aria-label="Cerrar menú" style="width:44px;height:44px;background:transparent;border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;cursor:pointer;font-size:20px">✕</button>
+      <button onClick="{{ toggleMenu }}" aria-label="Menü schließen" style="width:44px;height:44px;background:transparent;border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;cursor:pointer;font-size:20px">✕</button>
     </div>
     <div style="display:flex;flex-direction:column;gap:4px;margin-top:32px">
       <sc-for list="{{ navLinks }}" as="link" hint-placeholder-count="4">
         <a href="#" onClick="{{ link.onClick }}" style="font-family:'Playfair Display',serif;font-size:30px;color:#F7F5F2;padding:14px 0;border-bottom:1px solid rgba(247,245,242,.12)">{{ link.label }}</a>
       </sc-for>
     </div>
-    <div style="display:flex;flex-wrap:wrap;gap:18px;margin:24px 0 8px;font-size:15px;font-weight:600;letter-spacing:.05em"><span style="color:#F7F5F2;opacity:1;text-decoration:underline;text-underline-offset:3px">ES</span><a href="/en/" hreflang="en" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">EN</a><a href="/de/" hreflang="de" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">DE</a><a href="/fr/" hreflang="fr" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">FR</a><a href="/it/" hreflang="it" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">IT</a><a href="/ru/" hreflang="ru" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">RU</a></div>
-    <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="margin-top:auto;background:#DCC8A1;color:#0B2A44;text-align:center;padding:16px;border-radius:2px;font-weight:600;font-size:16px">Reservar por WhatsApp</a>
+    <div style="display:flex;flex-wrap:wrap;gap:18px;margin:24px 0 8px;font-size:15px;font-weight:600;letter-spacing:.05em"><a href="/" hreflang="es" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">ES</a><a href="/en/" hreflang="en" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">EN</a><span style="color:#F7F5F2;opacity:1;text-decoration:underline;text-underline-offset:3px">DE</span><a href="/fr/" hreflang="fr" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">FR</a><a href="/it/" hreflang="it" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">IT</a><a href="/ru/" hreflang="ru" style="color:rgba(247,245,242,.6);opacity:1;text-decoration:none">RU</a></div>
+    <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="margin-top:auto;background:#DCC8A1;color:#0B2A44;text-align:center;padding:16px;border-radius:2px;font-weight:600;font-size:16px">Über WhatsApp buchen</a>
   </div>
 </sc-if>
 
@@ -2739,17 +2739,17 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
       <div data-reveal>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px">
           <span style="width:34px;height:1px;background:#C9B488"></span>
-          <span style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A">Estancia · Nerja · Costa del Sol</span>
+          <span style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A">Aufenthalt · Nerja · Costa del Sol</span>
         </div>
-        <h1 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(40px,5.6vw,68px);line-height:1.04;letter-spacing:-.015em;color:#0B2A44;margin:0 0 22px;text-wrap:balance">Dos casas boutique frente al Mediterráneo de Nerja.</h1>
-        <p style="font-size:18px;line-height:1.7;color:#40576B;max-width:30em;margin:0 0 34px">Casa Florence y Casa Isolde, recién reformadas en una zona tranquila y familiar de Nerja. Reserva directa con la familia Zeltmann, sin intermediarios ni comisiones.</p>
+        <h1 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(40px,5.6vw,68px);line-height:1.04;letter-spacing:-.015em;color:#0B2A44;margin:0 0 22px;text-wrap:balance">Zwei Boutique-Wohnungen mit Blick aufs Mittelmeer in Nerja.</h1>
+        <p style="font-size:18px;line-height:1.7;color:#40576B;max-width:30em;margin:0 0 34px">Casa Florence und Casa Isolde, frisch renoviert in einem ruhigen, familiären Viertel von Nerja. Direkt bei Familie Zeltmann buchen – ohne Vermittler, ohne Gebühren.</p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
-          <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="background:#DCC8A1;color:#0B2A44;padding:16px 30px;border-radius:2px;font-weight:600;font-size:15px;border:1px solid #DCC8A1">Reservar por WhatsApp</a>
-          <a href="#casas" onClick="{{ seeCasas }}" style="padding:16px 26px;border-radius:2px;font-weight:600;font-size:15px;color:#0B2A44;border:1px solid rgba(11,42,68,.28)">Ver las casas</a>
+          <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="background:#DCC8A1;color:#0B2A44;padding:16px 30px;border-radius:2px;font-weight:600;font-size:15px;border:1px solid #DCC8A1">Über WhatsApp buchen</a>
+          <a href="#casas" onClick="{{ seeCasas }}" style="padding:16px 26px;border-radius:2px;font-weight:600;font-size:15px;color:#0B2A44;border:1px solid rgba(11,42,68,.28)">Die Wohnungen ansehen</a>
         </div>
         <div style="display:flex;align-items:center;gap:10px;margin-top:34px;font-size:13.5px;color:#6B7F8F">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A8A4E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          Reserva directa, sin comisiones · Atención en 5 idiomas
+          Direkt buchen, ohne Gebühren · Betreuung in 5 Sprachen
         </div>
       </div>
       <div data-reveal style="position:relative">
@@ -2772,7 +2772,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
         </div>
         <div style="position:absolute;right:-14px;bottom:-14px;background:#F7F5F2;padding:18px 22px;border:1px solid rgba(11,42,68,.1);box-shadow:0 20px 50px -24px rgba(11,42,68,.4);max-width:200px">
           <div style="font-family:'Playfair Display',serif;font-size:34px;line-height:1;color:#0B2A44">2</div>
-          <div style="font-size:12.5px;color:#6B7F8F;margin-top:6px;line-height:1.4">apartamentos recién reformados en el mismo edificio</div>
+          <div style="font-size:12.5px;color:#6B7F8F;margin-top:6px;line-height:1.4">frisch renovierte Wohnungen im selben Gebäude</div>
         </div>
       </div>
     </div>
@@ -2795,7 +2795,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
         </div>
         <h1 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(44px,6.6vw,82px);line-height:1.02;letter-spacing:-.02em;color:#F7F5F2;margin:0 0 24px;text-wrap:balance">Despierta frente al Mediterráneo.</h1>
         <p style="font-size:19px;line-height:1.65;color:rgba(247,245,242,.82);max-width:34em;margin:0 0 36px">Dos apartamentos boutique en el corazón de Nerja. Reserva directa con la familia Zeltmann, sin comisiones.</p>
-        <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="display:inline-block;background:#DCC8A1;color:#0B2A44;padding:17px 34px;border-radius:2px;font-weight:600;font-size:15px">Reservar por WhatsApp</a>
+        <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="display:inline-block;background:#DCC8A1;color:#0B2A44;padding:17px 34px;border-radius:2px;font-weight:600;font-size:15px">Über WhatsApp buchen</a>
       </div>
     </div>
   </section>
@@ -2803,25 +2803,25 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <!-- VALOR -->
   <section style="background:#F7F5F2;padding:clamp(72px,9vw,116px) 24px">
     <div style="max-width:1000px;margin:0 auto;text-align:center" data-reveal>
-      <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:20px">Reserva directa</div>
-      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,50px);line-height:1.1;letter-spacing:-.01em;color:#0B2A44;margin:0 auto 22px;max-width:16em;text-wrap:balance">Sin intermediarios ni comisiones. Solo tú y el Mediterráneo.</h2>
-      <p style="font-size:18px;line-height:1.75;color:#40576B;max-width:40em;margin:0 auto">Somos una familia arraigada en Nerja. Cuidamos cada detalle de nuestras dos casas para que tu estancia sea sencilla, cálida y sin sorpresas: escríbenos, reserva directamente y llega a disfrutar.</p>
+      <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:20px">Direktbuchung</div>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,50px);line-height:1.1;letter-spacing:-.01em;color:#0B2A44;margin:0 auto 22px;max-width:16em;text-wrap:balance">Keine Vermittler, keine Gebühren. Nur du und das Mittelmeer.</h2>
+      <p style="font-size:18px;line-height:1.75;color:#40576B;max-width:40em;margin:0 auto">Wir sind eine in Nerja verwurzelte Familie. Wir kümmern uns um jedes Detail unserer beiden Wohnungen, damit dein Aufenthalt einfach, herzlich und ohne Überraschungen ist: Schreib uns, buche direkt und komm einfach genießen.</p>
     </div>
     <div style="max-width:1120px;margin:56px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(11,42,68,.12);border:1px solid rgba(11,42,68,.12)" data-cols3 data-reveal>
       <div style="background:#F7F5F2;padding:36px 30px">
         <div style="font-family:'Playfair Display',serif;font-size:40px;line-height:1;color:#0B2A44">0%</div>
-        <div style="font-weight:600;font-size:16px;margin:14px 0 8px;color:#0B2A44">Comisiones</div>
-        <p style="font-size:14.5px;line-height:1.6;color:#6B7F8F;margin:0">El precio que acordamos es el que pagas. Reservas directamente con nosotros por WhatsApp.</p>
+        <div style="font-weight:600;font-size:16px;margin:14px 0 8px;color:#0B2A44">Gebühren</div>
+        <p style="font-size:14.5px;line-height:1.6;color:#6B7F8F;margin:0">Der vereinbarte Preis ist der Preis, den du zahlst. Du buchst direkt bei uns über WhatsApp.</p>
       </div>
       <div style="background:#F7F5F2;padding:36px 30px">
         <div style="font-family:'Playfair Display',serif;font-size:40px;line-height:1;color:#0B2A44">12 min</div>
-        <div style="font-weight:600;font-size:16px;margin:14px 0 8px;color:#0B2A44">A pie de la playa</div>
-        <p style="font-size:14.5px;line-height:1.6;color:#6B7F8F;margin:0">Zona residencial tranquila, con supermercados y cafeterías cerca y el centro a pocos minutos.</p>
+        <div style="font-weight:600;font-size:16px;margin:14px 0 8px;color:#0B2A44">Zu Fuß zum Strand</div>
+        <p style="font-size:14.5px;line-height:1.6;color:#6B7F8F;margin:0">Ruhiges Wohnviertel, mit Supermärkten und Cafés in der Nähe und dem Zentrum nur wenige Minuten entfernt.</p>
       </div>
       <div style="background:#F7F5F2;padding:36px 30px">
         <div style="font-family:'Playfair Display',serif;font-size:40px;line-height:1;color:#0B2A44">5</div>
-        <div style="font-weight:600;font-size:16px;margin:14px 0 8px;color:#0B2A44">Idiomas</div>
-        <p style="font-size:14.5px;line-height:1.6;color:#6B7F8F;margin:0">Te atendemos en español, inglés, alemán, francés e italiano, antes y durante tu estancia.</p>
+        <div style="font-weight:600;font-size:16px;margin:14px 0 8px;color:#0B2A44">Sprachen</div>
+        <p style="font-size:14.5px;line-height:1.6;color:#6B7F8F;margin:0">Wir betreuen dich auf Spanisch, Englisch, Deutsch, Französisch und Italienisch – vor und während deines Aufenthalts.</p>
       </div>
     </div>
   </section>
@@ -2831,10 +2831,10 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
     <div style="max-width:1220px;margin:0 auto">
       <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px" data-reveal>
         <div>
-          <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:16px">Nuestras casas</div>
-          <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-.01em;color:#0B2A44;margin:0;max-width:14em">Dos apartamentos, el mismo cuidado</h2>
+          <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:16px">Unsere Wohnungen</div>
+          <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-.01em;color:#0B2A44;margin:0;max-width:14em">Zwei Wohnungen, dieselbe Sorgfalt</h2>
         </div>
-        <p style="font-size:15px;line-height:1.6;color:#6B7F8F;max-width:22em;margin:0" data-hidesm>Casa Florence y Casa Isolde comparten edificio en una calle tranquila de Nerja. Elige la tuya.</p>
+        <p style="font-size:15px;line-height:1.6;color:#6B7F8F;max-width:22em;margin:0" data-hidesm>Casa Florence und Casa Isolde teilen sich ein Gebäude in einer ruhigen Straße in Nerja. Wähle deine.</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px" data-cols2>
         <sc-for list="{{ homeCards }}" as="c" hint-placeholder-count="2">
@@ -2845,7 +2845,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
               <div style="position:absolute;top:14px;left:14px;background:rgba(247,245,242,.92);padding:6px 11px;font:600 10.5px 'Inter';letter-spacing:.14em;text-transform:uppercase;color:#0B2A44">{{ c.door }}</div>
               <div style="position:absolute;bottom:14px;right:14px;display:flex;align-items:center;gap:6px;background:rgba(11,42,68,.86);color:#F7F5F2;padding:6px 11px;font:600 11px 'Inter'">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="14" rx="1.5"/><circle cx="12" cy="13" r="3.4"/></svg>
-                Galería · 6 fotos
+                Galerie · 6 Fotos
               </div>
             </div>
             <div style="padding:28px 28px 30px">
@@ -2853,13 +2853,13 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
               <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:29px;line-height:1.1;color:#0B2A44;margin:0 0 12px">{{ c.name }}</h3>
               <p style="font-size:15.5px;line-height:1.6;color:#40576B;margin:0 0 22px;min-height:2.9em">{{ c.tagline }}</p>
               <div style="display:flex;flex-wrap:wrap;gap:18px;padding:18px 0;border-top:1px solid rgba(11,42,68,.12);border-bottom:1px solid rgba(11,42,68,.12);margin-bottom:22px">
-                <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3 3 0 0 1 0 5"/><path d="M18 20a6 6 0 0 0-3.5-5.5"/></svg>{{ c.guests }} huéspedes</span>
+                <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3 3 0 0 1 0 5"/><path d="M18 20a6 6 0 0 0-3.5-5.5"/></svg>{{ c.guests }} Gäste</span>
                 <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/><path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg>{{ c.beds }}</span>
-                <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 12V6a2 2 0 0 1 2-2c1 0 1.5.5 2 1"/></svg>Vivienda completa</span>
+                <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 12V6a2 2 0 0 1 2-2c1 0 1.5.5 2 1"/></svg>Ganze Wohnung</span>
               </div>
               <div style="display:flex;align-items:center;justify-content:space-between">
-                <span style="font-size:13.5px;color:#6B7F8F">Reserva directa · consulta precio</span>
-                <span style="display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:#0B2A44">Ver casa <span style="font-size:16px">→</span></span>
+                <span style="font-size:13.5px;color:#6B7F8F">Direkt buchen · Preis anfragen</span>
+                <span style="display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:#0B2A44">Wohnung ansehen <span style="font-size:16px">→</span></span>
               </div>
             </div>
           </a>
@@ -2871,9 +2871,9 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <section id="ubicacion" style="background:#0B2A44;padding:clamp(72px,9vw,116px) 24px;color:#F7F5F2">
     <div style="max-width:1220px;margin:0 auto;display:grid;grid-template-columns:.86fr 1.14fr;gap:clamp(32px,5vw,64px);align-items:center" data-stack>
       <div data-reveal>
-        <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">El entorno</div>
-        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-.01em;margin:0 0 20px;max-width:12em">Una calle tranquila, con Nerja a tus pies</h2>
-        <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 32px;max-width:34em">Calle Joaquín Herrera, en una zona residencial tranquila y familiar de poco tráfico. La playa queda a unos 12 minutos a pie y el centro, con sus restaurantes y el Balcón de Europa, a pocos minutos más.</p>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Die Umgebung</div>
+        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-.01em;margin:0 0 20px;max-width:12em">Eine ruhige Straße, mit Nerja zu deinen Füßen</h2>
+        <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 32px;max-width:34em">Calle Joaquín Herrera, in einem ruhigen, familiären Wohnviertel mit wenig Verkehr. Der Strand ist etwa 12 Minuten zu Fuß entfernt und das Zentrum – mit seinen Restaurants und dem Balcón de Europa – nur wenige Minuten weiter.</p>
         <div style="display:flex;flex-direction:column">
           <sc-for list="{{ pois }}" as="poi" hint-placeholder-count="5">
             <div style="display:flex;align-items:center;gap:16px;padding:15px 0;border-top:1px solid rgba(247,245,242,.14)">
@@ -2897,10 +2897,10 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <!-- RESEÑAS -->
   <section style="background:#F7F5F2;padding:clamp(72px,9vw,116px) 24px">
     <div style="max-width:920px;margin:0 auto;text-align:center" data-reveal>
-      <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:20px">Huéspedes</div>
-      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.1;letter-spacing:-.01em;color:#0B2A44;margin:0 0 48px">Lo que cuentan quienes ya han venido</h2>
+      <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:20px">Gäste</div>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,48px);line-height:1.1;letter-spacing:-.01em;color:#0B2A44;margin:0 0 48px">Was frühere Gäste sagen</h2>
       <div style="position:relative;background:#fff;border:1px solid rgba(11,42,68,.1);padding:clamp(32px,5vw,56px);box-shadow:0 30px 60px -40px rgba(11,42,68,.4)">
-        <div style="display:flex;justify-content:center;gap:4px;margin-bottom:22px" aria-label="Valoración cinco estrellas">
+        <div style="display:flex;justify-content:center;gap:4px;margin-bottom:22px" aria-label="Fünf-Sterne-Bewertung">
           <sc-for list="{{ stars }}" as="s" hint-placeholder-count="5">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#DCC8A1" stroke="none"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
           </sc-for>
@@ -2914,19 +2914,19 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
           <span>{{ current.date }}</span>
         </div>
         <div style="display:flex;justify-content:center;gap:12px;margin-top:32px">
-          <button onClick="{{ prevReview }}" aria-label="Reseña anterior" style="width:46px;height:46px;background:transparent;border:1px solid rgba(11,42,68,.2);border-radius:2px;color:#0B2A44;font-size:18px;cursor:pointer">‹</button>
-          <button onClick="{{ nextReview }}" aria-label="Reseña siguiente" style="width:46px;height:46px;background:transparent;border:1px solid rgba(11,42,68,.2);border-radius:2px;color:#0B2A44;font-size:18px;cursor:pointer">›</button>
+          <button onClick="{{ prevReview }}" aria-label="Vorherige Bewertung" style="width:46px;height:46px;background:transparent;border:1px solid rgba(11,42,68,.2);border-radius:2px;color:#0B2A44;font-size:18px;cursor:pointer">‹</button>
+          <button onClick="{{ nextReview }}" aria-label="Nächste Bewertung" style="width:46px;height:46px;background:transparent;border:1px solid rgba(11,42,68,.2);border-radius:2px;color:#0B2A44;font-size:18px;cursor:pointer">›</button>
         </div>
       </div>
-      <p style="font-size:12.5px;color:#A0AEB8;margin:20px 0 0">Reseñas de ejemplo · pendientes de sustituir por las verificadas de Airbnb, Booking y Google.</p>
+      <p style="font-size:12.5px;color:#A0AEB8;margin:20px 0 0">Beispielbewertungen · werden durch verifizierte von Airbnb, Booking und Google ersetzt.</p>
     </div>
   </section>
   <!-- FAQ -->
   <section style="background:#EFE7D6;padding:clamp(72px,9vw,116px) 24px">
     <div style="max-width:820px;margin:0 auto">
       <div style="text-align:center;margin-bottom:44px" data-reveal>
-        <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:18px">Preguntas frecuentes</div>
-        <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.1;color:#0B2A44;margin:0">Todo claro antes de reservar</h2>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#B49B6A;margin-bottom:18px">Häufige Fragen</div>
+        <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.1;color:#0B2A44;margin:0">Alles klar, bevor du buchst</h2>
       </div>
       <div data-reveal>
         <sc-for list="{{ faq }}" as="item" hint-placeholder-count="5">
@@ -2949,10 +2949,10 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <section style="background:#F7F5F2;padding:clamp(72px,9vw,116px) 24px">
     <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,56px);align-items:center;background:#0B2A44;color:#F7F5F2;overflow:hidden" data-stack data-reveal>
       <div style="padding:clamp(36px,5vw,60px)">
-        <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Guía del huésped</div>
-        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.8vw,42px);line-height:1.12;margin:0 0 18px;max-width:14em">Todo lo que necesitas saber, en un solo sitio</h2>
-        <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 30px;max-width:32em">Llegada, cómo funciona la casa, nuestros rincones favoritos de Nerja y cómo contactarnos. Tarjetas breves con minutos de lectura, para consultar justo lo que necesitas.</p>
-        <a href="#" onClick="{{ goGuia }}" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:15px 28px;border-radius:2px;font-weight:600;font-size:15px">Abrir la guía <span style="font-size:16px">→</span></a>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Gästeführer</div>
+        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.8vw,42px);line-height:1.12;margin:0 0 18px;max-width:14em">Alles Wichtige an einem Ort</h2>
+        <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 30px;max-width:32em">Ankunft, wie die Wohnung funktioniert, unsere Lieblingsecken in Nerja und wie du uns erreichst. Kurze Karten mit Lesezeit, damit du genau das nachschlägst, was du brauchst.</p>
+        <a href="#" onClick="{{ goGuia }}" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:15px 28px;border-radius:2px;font-weight:600;font-size:15px">Führer öffnen <span style="font-size:16px">→</span></a>
       </div>
       <div style="position:relative;min-height:280px;background:linear-gradient(150deg,#12405f,#0B2A44);align-self:stretch;overflow:hidden">
         <img src="img/nerja/guia.webp" alt="Nerja" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
@@ -2978,7 +2978,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <section style="background:#F7F5F2;padding:104px 24px 44px">
     <div style="max-width:1220px;margin:0 auto">
       <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#8A9BA8;margin-bottom:30px">
-        <a href="#" onClick="{{ goHome }}" style="color:#8A9BA8">Inicio</a>
+        <a href="#" onClick="{{ goHome }}" style="color:#8A9BA8">Start</a>
         <span>/</span>
         <span style="color:#0B2A44">{{ prop.name }}</span>
       </div>
@@ -2993,11 +2993,11 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
           <div style="display:flex;flex-wrap:wrap;gap:12px">
-            <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44;background:#fff;border:1px solid rgba(11,42,68,.12);padding:10px 15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/></svg>{{ prop.guests }} huéspedes</span>
+            <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44;background:#fff;border:1px solid rgba(11,42,68,.12);padding:10px 15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/></svg>{{ prop.guests }} Gäste</span>
             <span style="display:flex;align-items:center;gap:8px;font-size:14px;color:#0B2A44;background:#fff;border:1px solid rgba(11,42,68,.12);padding:10px 15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#103A5C" stroke-width="1.5" stroke-linecap="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/></svg>{{ prop.bedsLabel }}</span>
           </div>
-          <a href="{{ propWaLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:16px 28px;border-radius:2px;font-weight:600;font-size:15px">Consultar disponibilidad</a>
-          <span style="font-size:13px;color:#6B7F8F;text-align:center">Reserva directa por WhatsApp · sin comisiones</span>
+          <a href="{{ propWaLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:16px 28px;border-radius:2px;font-weight:600;font-size:15px">Verfügbarkeit anfragen</a>
+          <span style="font-size:13px;color:#6B7F8F;text-align:center">Direkt über WhatsApp buchen · ohne Gebühren</span>
         </div>
       </div>
     </div>
@@ -3007,7 +3007,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <section style="background:#F7F5F2;padding:0 24px 20px">
     <div style="max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px" data-gallery>
       <sc-for list="{{ galleryItems }}" as="g" hint-placeholder-count="6">
-        <button onClick="{{ g.onClick }}" aria-label="Ampliar foto {{ g.label }}" style="position:relative;aspect-ratio:4 / 3;background:linear-gradient(150deg,#EADFC8,#DCC8A1 62%,#C9B488);border:1px solid rgba(11,42,68,.08);cursor:pointer;overflow:hidden;padding:0">
+        <button onClick="{{ g.onClick }}" aria-label="Foto vergrößern {{ g.label }}" style="position:relative;aspect-ratio:4 / 3;background:linear-gradient(150deg,#EADFC8,#DCC8A1 62%,#C9B488);border:1px solid rgba(11,42,68,.08);cursor:pointer;overflow:hidden;padding:0">
           <sc-if value="{{ g.src }}"><img src="{{ g.src }}" alt="{{ g.label }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></sc-if>
           <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.38),transparent 60%)"></div>
           <span style="position:absolute;left:12px;bottom:12px;font:600 10px 'Inter';letter-spacing:.16em;text-transform:uppercase;color:#0B2A44;background:rgba(247,245,242,.9);padding:5px 9px">{{ g.label }}</span>
@@ -3024,25 +3024,25 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(11,42,68,.14);border:1px solid rgba(11,42,68,.14)">
           <div style="background:#EFE7D6;padding:26px">
             <div style="font-family:'Playfair Display',serif;font-size:44px;line-height:1;color:#0B2A44">{{ prop.guests }}</div>
-            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Huéspedes</div>
+            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Gäste</div>
           </div>
           <div style="background:#EFE7D6;padding:26px">
             <div style="font-family:'Playfair Display',serif;font-size:44px;line-height:1;color:#0B2A44">{{ prop.bedrooms }}</div>
-            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Dormitorios</div>
+            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Schlafzimmer</div>
           </div>
           <div style="background:#EFE7D6;padding:26px">
             <div style="font-family:'Playfair Display',serif;font-size:44px;line-height:1;color:#0B2A44">{{ prop.baths }}</div>
-            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Baño</div>
+            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Bad</div>
           </div>
           <div style="background:#EFE7D6;padding:26px">
             <div style="font-family:'Playfair Display',serif;font-size:44px;line-height:1;color:#0B2A44">{{ prop.m2 }}<span style="font-size:20px"> m²</span></div>
-            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Reformado hace poco</div>
+            <div style="font-size:13px;letter-spacing:.06em;color:#6B7F8F;margin-top:8px;text-transform:uppercase">Kürzlich renoviert</div>
           </div>
         </div>
-        <p style="font-size:12.5px;color:#A08E6A;margin:14px 0 0">Vivienda completa · {{ prop.door }} · Calle Joaquín Herrera, blq. 4, Nerja.</p>
+        <p style="font-size:12.5px;color:#A08E6A;margin:14px 0 0">Ganze Wohnung · {{ prop.door }} · Calle Joaquín Herrera, blq. 4, Nerja.</p>
       </div>
       <div>
-        <div style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#B49B6A;margin-bottom:18px">La casa</div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#B49B6A;margin-bottom:18px">Die Wohnung</div>
         <sc-for list="{{ prop.intro }}" as="para" hint-placeholder-count="2">
           <p style="font-size:17px;line-height:1.75;color:#40576B;margin:0 0 18px">{{ para }}</p>
         </sc-for>
@@ -3053,8 +3053,8 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <!-- AMENIDADES -->
   <section style="background:#F7F5F2;padding:clamp(64px,8vw,104px) 24px">
     <div style="max-width:1120px;margin:0 auto">
-      <div style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#B49B6A;margin-bottom:18px">Equipamiento</div>
-      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(26px,3.4vw,40px);line-height:1.1;color:#0B2A44;margin:0 0 40px">Todo lo que necesitas</h2>
+      <div style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#B49B6A;margin-bottom:18px">Ausstattung</div>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(26px,3.4vw,40px);line-height:1.1;color:#0B2A44;margin:0 0 40px">Alles, was du brauchst</h2>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px" data-cols2>
         <sc-for list="{{ prop.amenities }}" as="a" hint-placeholder-count="8">
           <div style="display:flex;align-items:center;gap:12px;padding:18px 18px;background:#fff;border:1px solid rgba(11,42,68,.1);color:#0B2A44">
@@ -3070,15 +3070,15 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <section style="background:#0B2A44;padding:clamp(64px,8vw,100px) 24px;color:#F7F5F2">
     <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(28px,4vw,56px);align-items:center" data-stack>
       <div>
-        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.8vw,44px);line-height:1.1;margin:0 0 16px;max-width:14em">¿Te encaja {{ prop.name }} para tus fechas?</h2>
-        <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 28px;max-width:32em">Escríbenos por WhatsApp con tus fechas y te confirmamos disponibilidad y precio al instante. Sin comisiones, en tu idioma.</p>
-        <a href="{{ propWaLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:16px 30px;border-radius:2px;font-weight:600;font-size:15px">Reservar por WhatsApp</a>
+        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.8vw,44px);line-height:1.1;margin:0 0 16px;max-width:14em">Passt {{ prop.name }} zu deinen Terminen?</h2>
+        <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 28px;max-width:32em">Schreib uns über WhatsApp mit deinen Terminen, und wir bestätigen dir Verfügbarkeit und Preis sofort. Ohne Gebühren, in deiner Sprache.</p>
+        <a href="{{ propWaLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:16px 30px;border-radius:2px;font-weight:600;font-size:15px">Über WhatsApp buchen</a>
       </div>
       <a href="#" onClick="{{ goOther }}" style="display:block;background:rgba(247,245,242,.06);border:1px solid rgba(247,245,242,.16);padding:26px">
-        <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:12px">La otra casa</div>
+        <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:12px">Die andere Wohnung</div>
         <div style="font-family:'Playfair Display',serif;font-size:26px;color:#F7F5F2;margin-bottom:8px">{{ otherProp.name }}</div>
-        <div style="font-size:14px;color:rgba(247,245,242,.7);margin-bottom:16px">{{ otherProp.bedsLabel }} · {{ otherProp.guests }} huéspedes</div>
-        <span style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#DCC8A1">Ver casa <span>→</span></span>
+        <div style="font-size:14px;color:rgba(247,245,242,.7);margin-bottom:16px">{{ otherProp.bedsLabel }} · {{ otherProp.guests }} Gäste</div>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#DCC8A1">Wohnung ansehen <span>→</span></span>
       </a>
     </div>
   </section>
@@ -3091,16 +3091,16 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <section style="background:#0B2A44;padding:120px 24px clamp(56px,7vw,80px);color:#F7F5F2">
     <div style="max-width:900px;margin:0 auto">
       <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(247,245,242,.55);margin-bottom:30px">
-        <a href="#" onClick="{{ goHome }}" style="color:rgba(247,245,242,.55)">Inicio</a>
+        <a href="#" onClick="{{ goHome }}" style="color:rgba(247,245,242,.55)">Start</a>
         <span>/</span>
-        <span style="color:#DCC8A1">Guía del huésped</span>
+        <span style="color:#DCC8A1">Gästeführer</span>
       </div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px">
         <span style="width:30px;height:1px;background:#DCC8A1"></span>
-        <span style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#DCC8A1">Guía del huésped</span>
+        <span style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#DCC8A1">Gästeführer</span>
       </div>
-      <h1 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(38px,5.4vw,66px);line-height:1.04;letter-spacing:-.02em;margin:0 0 20px;max-width:14em">Tu estancia en Nerja, sin dudas</h1>
-      <p style="font-size:18px;line-height:1.7;color:rgba(247,245,242,.8);max-width:34em;margin:0">Lo esencial para que llegues, te instales y disfrutes. Cada tarjeta indica su tiempo de lectura: abre solo la que necesites.</p>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(38px,5.4vw,66px);line-height:1.04;letter-spacing:-.02em;margin:0 0 20px;max-width:14em">Dein Aufenthalt in Nerja, ganz ohne Fragen</h1>
+      <p style="font-size:18px;line-height:1.7;color:rgba(247,245,242,.8);max-width:34em;margin:0">Das Wesentliche, um anzukommen, dich einzurichten und zu genießen. Jede Karte zeigt ihre Lesezeit: Öffne nur die, die du brauchst.</p>
     </div>
   </section>
 
@@ -3115,7 +3115,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
                 <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
                   <span style="font-family:'Playfair Display',serif;font-size:20px;color:#C9B488">{{ g.num }}</span>
                   <span style="font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#B49B6A">{{ g.tag }}</span>
-                  <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6B7F8F;background:#EFE7D6;padding:4px 10px;border-radius:999px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>{{ g.mins }} min de lectura</span>
+                  <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6B7F8F;background:#EFE7D6;padding:4px 10px;border-radius:999px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>{{ g.mins }} Min. Lesezeit</span>
                 </div>
                 <h2 style="font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(22px,2.8vw,30px);line-height:1.1;color:#0B2A44;margin:0 0 12px">{{ g.title }}</h2>
                 <p style="font-size:16px;line-height:1.7;color:#40576B;margin:0;max-width:44em">{{ g.summary }}</p>
@@ -3137,9 +3137,9 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
       </sc-for>
 
       <div style="margin-top:20px;background:#EFE7D6;border:1px solid rgba(11,42,68,.1);padding:clamp(28px,4vw,44px);text-align:center">
-        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(24px,3vw,32px);color:#0B2A44;margin:0 0 12px">¿Necesitas algo más?</h2>
-        <p style="font-size:16px;line-height:1.7;color:#40576B;margin:0 auto 24px;max-width:32em">Estamos a un mensaje durante toda tu estancia, en español, inglés, alemán, francés e italiano.</p>
-        <a href="{{ waGuiaLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:15px 28px;border-radius:2px;font-weight:600;font-size:15px">Escríbenos por WhatsApp</a>
+        <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(24px,3vw,32px);color:#0B2A44;margin:0 0 12px">Brauchst du noch etwas?</h2>
+        <p style="font-size:16px;line-height:1.7;color:#40576B;margin:0 auto 24px;max-width:32em">Während deines gesamten Aufenthalts sind wir nur eine Nachricht entfernt – auf Spanisch, Englisch, Deutsch, Französisch und Italienisch.</p>
+        <a href="{{ waGuiaLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:15px 28px;border-radius:2px;font-weight:600;font-size:15px">Schreib uns über WhatsApp</a>
       </div>
     </div>
   </section>
@@ -3151,7 +3151,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
   <div style="position:fixed;inset:0;z-index:150;background:rgba(8,26,40,.94);display:flex;flex-direction:column;padding:20px" onClick="{{ closeLb }}">
     <div style="display:flex;justify-content:space-between;align-items:center;color:#F7F5F2">
       <span style="font:600 12px 'Inter';letter-spacing:.16em;text-transform:uppercase;color:rgba(247,245,242,.7)">{{ lbCurrent.label }}</span>
-      <button onClick="{{ closeLb }}" aria-label="Cerrar galería" style="width:44px;height:44px;background:transparent;border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:20px;cursor:pointer">✕</button>
+      <button onClick="{{ closeLb }}" aria-label="Galerie schließen" style="width:44px;height:44px;background:transparent;border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:20px;cursor:pointer">✕</button>
     </div>
     <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:14px;min-height:0" onClick="{{ closeLb }}">
       <div style="width:min(1000px,90vw);aspect-ratio:{{ lbCurrent.ratio }};max-height:78vh;background:linear-gradient(150deg,#EADFC8,#C9B488);position:relative;border:1px solid rgba(247,245,242,.12);overflow:hidden">
@@ -3159,8 +3159,8 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
       </div>
     </div>
     <div style="display:flex;justify-content:center;gap:12px;padding-top:8px">
-      <button onClick="{{ lbPrev }}" aria-label="Anterior" style="width:48px;height:48px;background:rgba(247,245,242,.08);border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:18px;cursor:pointer">‹</button>
-      <button onClick="{{ lbNext }}" aria-label="Siguiente" style="width:48px;height:48px;background:rgba(247,245,242,.08);border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:18px;cursor:pointer">›</button>
+      <button onClick="{{ lbPrev }}" aria-label="Zurück" style="width:48px;height:48px;background:rgba(247,245,242,.08);border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:18px;cursor:pointer">‹</button>
+      <button onClick="{{ lbNext }}" aria-label="Weiter" style="width:48px;height:48px;background:rgba(247,245,242,.08);border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:18px;cursor:pointer">›</button>
     </div>
   </div>
 </sc-if>
@@ -3175,20 +3175,20 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
           <span style="width:38px;height:38px;border:1px solid rgba(220,200,161,.7);border-radius:50%;display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:600;font-size:15px;color:#DCC8A1">ZH</span>
           <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:20px">ZeltmannHome</span>
         </div>
-        <p style="font-size:14.5px;line-height:1.7;color:rgba(247,245,242,.62);margin:0 0 18px;max-width:26em">Dos apartamentos boutique recién reformados en Nerja, Costa del Sol. Reserva directa con la familia Zeltmann, sin comisiones.</p>
+        <p style="font-size:14.5px;line-height:1.7;color:rgba(247,245,242,.62);margin:0 0 18px;max-width:26em">Zwei frisch renovierte Boutique-Wohnungen in Nerja, Costa del Sol. Direkt bei Familie Zeltmann buchen, ohne Gebühren.</p>
         <span style="display:inline-block;font-size:12px;letter-spacing:.1em;color:rgba(247,245,242,.5)">Español · English · Deutsch · Français · Italiano</span>
       </div>
       <div>
-        <div style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Navegar</div>
+        <div style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Navigation</div>
         <div style="display:flex;flex-direction:column;gap:12px;font-size:14.5px">
-          <a href="#" onClick="{{ goHome }}" style="color:rgba(247,245,242,.78)">Inicio</a>
+          <a href="#" onClick="{{ goHome }}" style="color:rgba(247,245,242,.78)">Start</a>
           <a href="#" onClick="{{ goFlorence }}" style="color:rgba(247,245,242,.78)">Casa Florence</a>
           <a href="#" onClick="{{ goIsolde }}" style="color:rgba(247,245,242,.78)">Casa Isolde</a>
-          <a href="#" onClick="{{ goGuia }}" style="color:rgba(247,245,242,.78)">Guía del huésped</a>
+          <a href="#" onClick="{{ goGuia }}" style="color:rgba(247,245,242,.78)">Gästeführer</a>
         </div>
       </div>
       <div>
-        <div style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Contacto</div>
+        <div style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Kontakt</div>
         <div style="display:flex;flex-direction:column;gap:12px;font-size:14.5px">
           <a href="{{ waHomeLink }}" target="_blank" rel="noopener" style="color:rgba(247,245,242,.78);display:flex;align-items:center;gap:8px">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M12 2a10 10 0 0 0-8.7 15l-1.3 5 5.1-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.4-.2-3 .8.8-2.9-.3-.4A8 8 0 0 1 12 4z"/></svg>
@@ -3199,15 +3199,15 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
         </div>
       </div>
       <div>
-        <div style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Registro turístico</div>
+        <div style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#DCC8A1;margin-bottom:18px">Tourismusregister</div>
         <div style="display:flex;flex-direction:column;gap:14px;font-size:13.5px;color:rgba(247,245,242,.7)">
           <div>
             <div style="color:#F7F5F2;font-weight:600;font-size:14px">Casa Florence</div>
-            <div style="margin-top:3px">Nº registro VFT · <span style="color:#DCC8A1">VUT/MA/97533</span></div>
+            <div style="margin-top:3px">Registernummer VFT · <span style="color:#DCC8A1">VUT/MA/97533</span></div>
           </div>
           <div>
             <div style="color:#F7F5F2;font-weight:600;font-size:14px">Casa Isolde</div>
-            <div style="margin-top:3px">Nº registro VFT · <span style="color:#DCC8A1">VUT/MA/97478</span></div>
+            <div style="margin-top:3px">Registernummer VFT · <span style="color:#DCC8A1">VUT/MA/97478</span></div>
           </div>
         </div>
       </div>
@@ -3215,8 +3215,8 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
     <div style="margin-top:52px;padding-top:24px;border-top:1px solid rgba(247,245,242,.12);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
       <span style="font-size:12.5px;color:rgba(247,245,242,.5)">© 2026 ZeltmannHome · Nerja, Costa del Sol</span>
       <div style="display:flex;gap:22px;font-size:12.5px">
-        <a href="aviso-legal.html" style="color:rgba(247,245,242,.5)">Aviso legal</a>
-        <a href="privacidad.html" style="color:rgba(247,245,242,.5)">Privacidad</a>
+        <a href="aviso-legal.html" style="color:rgba(247,245,242,.5)">Impressum</a>
+        <a href="privacidad.html" style="color:rgba(247,245,242,.5)">Datenschutz</a>
         <a href="cookies.html" style="color:rgba(247,245,242,.5)">Cookies</a>
       </div>
     </div>
@@ -3224,7 +3224,7 @@ function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmoun
 </footer>
 
 <!-- ===== FLOATING WHATSAPP ===== -->
-<a href="{{ waHomeLink }}" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp" style="position:fixed;right:22px;bottom:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(11,42,68,.28);animation:zhPulse 2.8s ease-in-out infinite">
+<a href="{{ waHomeLink }}" target="_blank" rel="noopener" aria-label="Über WhatsApp buchen" style="position:fixed;right:22px;bottom:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(11,42,68,.28);animation:zhPulse 2.8s ease-in-out infinite">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.6-2-.17-.3-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.38s1.02 2.76 1.17 2.95c.14.19 2.01 3.08 4.88 4.32.68.29 1.21.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.42 1.27 4.86L2 22l5.28-1.38c1.38.75 2.96 1.18 4.64 1.18h.01c5.5 0 9.96-4.46 9.96-9.96S17.5 2.04 12 2.04z"/></svg>
 </a>
 
@@ -3332,37 +3332,37 @@ class Component extends DCLogic {
     const shared = { address:'Calle Joaquín Herrera 4', town:'29780 Nerja (Málaga)', lat:36.7459, lng:-3.8770 };
     const amen = (list)=>list.map(a=>({ ...a, iconEl:this._icon(a.icon) }));
     const AMEN = [
-      {icon:'wifi',label:'WiFi de fibra óptica'},
-      {icon:'ac',label:'A/C y calefacción por conductos'},
-      {icon:'kitchen',label:'Cocina totalmente equipada'},
-      {icon:'tv',label:'Smart TV 65" + TV en dormitorio'},
-      {icon:'washer',label:'Lavadora y lavavajillas'},
-      {icon:'towel',label:'Ropa de cama y toallas'},
-      {icon:'key',label:'Check-in personal con el propietario'},
-      {icon:'beach',label:'A 12 min a pie de la playa'},
-      {icon:'check',label:'Detector de humo y botiquín'}
+      {icon:'wifi',label:'Glasfaser-WLAN'},
+      {icon:'ac',label:'Klimaanlage und Heizung über Kanäle'},
+      {icon:'kitchen',label:'Voll ausgestattete Küche'},
+      {icon:'tv',label:'Smart-TV 65" + TV im Schlafzimmer'},
+      {icon:'washer',label:'Waschmaschine und Geschirrspüler'},
+      {icon:'towel',label:'Bettwäsche und Handtücher'},
+      {icon:'key',label:'Persönlicher Check-in mit dem Eigentümer'},
+      {icon:'beach',label:'12 Min. zu Fuß zum Strand'},
+      {icon:'check',label:'Rauchmelder und Erste-Hilfe-Kasten'}
     ];
-    const stay = 'El check-in es personal: te recibe el propietario, te entrega las llaves y te da sus recomendaciones para aprovechar la estancia. Si llegas de madrugada, coordinamos un acceso autónomo.';
-    const loc = 'Está en una calle residencial tranquila y familiar, de escaso tráfico, a solo 12 minutos a pie de la playa y a pocos minutos del centro, con restaurantes, cafeterías y supermercados cerca.';
+    const stay = 'Der Check-in erfolgt persönlich: Der Eigentümer empfängt dich, übergibt die Schlüssel und gibt dir Empfehlungen, um deinen Aufenthalt optimal zu nutzen. Bei Ankunft spät in der Nacht organisieren wir einen selbstständigen Zugang.';
+    const loc = 'Sie liegt in einer ruhigen, familiären Wohnstraße mit wenig Verkehr, nur 12 Minuten zu Fuß vom Strand und wenige Minuten vom Zentrum, mit Restaurants, Cafés und Supermärkten in der Nähe.';
     return {
-      florence: { ...shared, slug:'florence', name:'Casa Florence', door:'Pta. B', vft:'VUT/MA/97533', guests:6, bedrooms:1, baths:1, m2:65, bedsLabel:'1 dorm. + 2 sofás cama',
-        kicker:'VIVIENDA COMPLETA · NERJA',
-        tagline:'65 m² de luz, recién reformada, para hasta 6 personas.',
+      florence: { ...shared, slug:'florence', name:'Casa Florence', door:'Pta. B', vft:'VUT/MA/97533', guests:6, bedrooms:1, baths:1, m2:65, bedsLabel:'1 Schlafzimmer + 2 Schlafsofas',
+        kicker:'GANZE WOHNUNG · NERJA',
+        tagline:'65 m² voller Licht, frisch renoviert, für bis zu 6 Gäste.',
         intro:[
-          'Apartamento luminoso de 65 m² con orientación soleada, reformado por completo hace pocos meses: prácticamente todo nuevo. Capacidad para hasta 6 personas (máximo 6 adultos).',
-          'Un dormitorio con cama de matrimonio grande y dos sofás cama individuales en el salón, con sitio para dos adultos en cada uno. Cocina totalmente equipada, aire acondicionado y calefacción por conductos, Smart TV de 65" y WiFi de fibra óptica.',
+          'Helle 65-m²-Wohnung mit sonniger Ausrichtung, vor wenigen Monaten komplett renoviert: praktisch alles neu. Platz für bis zu 6 Personen (maximal 6 Erwachsene).',
+          'Ein Schlafzimmer mit großem Doppelbett und zwei einzelnen Schlafsofas im Wohnzimmer, jeweils für zwei Erwachsene. Voll ausgestattete Küche, Klimaanlage und Heizung über Kanäle, 65"-Smart-TV und Glasfaser-WLAN.',
           loc,
           stay
         ],
         cover:'img/florence/cover.webp',
         gallery:[{label:'Salón',ratio:'4 / 3',src:'img/florence/salon.webp'},{label:'Dormitorio',ratio:'1 / 1',src:'img/florence/dormitorio.webp'},{label:'Cocina',ratio:'1 / 1',src:'img/florence/cocina.webp'},{label:'Salón · sofás cama',ratio:'4 / 3',src:'img/florence/salon-sofas.webp'},{label:'Baño',ratio:'1 / 1',src:'img/florence/bano.webp'},{label:'Detalle',ratio:'1 / 1',src:'img/florence/detalle.webp'}],
         amenities: amen(AMEN) },
-      isolde: { ...shared, slug:'isolde', name:'Casa Isolde', door:'Pta. A', vft:'VUT/MA/97478', guests:4, bedrooms:2, baths:1, m2:55, bedsLabel:'2 dormitorios',
-        kicker:'VIVIENDA COMPLETA · NERJA',
-        tagline:'55 m² recién reformados, dos dormitorios para hasta 4.',
+      isolde: { ...shared, slug:'isolde', name:'Casa Isolde', door:'Pta. A', vft:'VUT/MA/97478', guests:4, bedrooms:2, baths:1, m2:55, bedsLabel:'2 Schlafzimmer',
+        kicker:'GANZE WOHNUNG · NERJA',
+        tagline:'55 m² frisch renoviert, zwei Schlafzimmer für bis zu 4.',
         intro:[
-          'Apartamento acogedor y luminoso de 55 m² con orientación soleada, reformado por completo hace pocos meses. Ideal para hasta 4 personas.',
-          'Dos dormitorios: uno con cama de matrimonio y otro con dos camas individuales. Cocina totalmente equipada, aire acondicionado y calefacción por conductos, Smart TV de 65" y WiFi de fibra óptica.',
+          'Gemütliche, helle 55-m²-Wohnung mit sonniger Ausrichtung, vor wenigen Monaten komplett renoviert. Ideal für bis zu 4 Gäste.',
+          'Zwei Schlafzimmer: eines mit Doppelbett und eines mit zwei Einzelbetten. Voll ausgestattete Küche, Klimaanlage und Heizung über Kanäle, 65"-Smart-TV und Glasfaser-WLAN.',
           loc,
           stay
         ],
@@ -3392,82 +3392,82 @@ class Component extends DCLogic {
       transition:'background .4s ease, border-color .4s ease'
     };
     const navLinks = [
-      { label:'Inicio', onClick:(e)=>{e.preventDefault();this.go('home');} },
+      { label:'Start', onClick:(e)=>{e.preventDefault();this.go('home');} },
       { label:'Casa Florence', onClick:(e)=>{e.preventDefault();this.go('property','florence');} },
       { label:'Casa Isolde', onClick:(e)=>{e.preventDefault();this.go('property','isolde');} },
-      { label:'Ubicación', onClick:(e)=>{e.preventDefault();this.scrollToId('ubicacion');} },
-      { label:'Guía', onClick:(e)=>{e.preventDefault();this.go('guia');} }
+      { label:'Lage', onClick:(e)=>{e.preventDefault();this.scrollToId('ubicacion');} },
+      { label:'Führer', onClick:(e)=>{e.preventDefault();this.go('guia');} }
     ];
     const reviews = [
       { name:'María G.', source:'Airbnb', date:'Sept 2025', rating:5, text:'Todo impecable y la ubicación inmejorable, a dos minutos del Balcón de Europa. La comunicación con la familia fue rapidísima por WhatsApp. Repetiremos sin duda.' },
-      { name:'Thomas W.', source:'Booking', date:'Ago 2025', rating:5, text:'Ein wunderschönes Apartment im Herzen von Nerja. Sehr sauber, ruhig und liebevoll eingerichtet. Der Strand ist zu Fuß erreichbar.' },
+      { name:'Thomas W.', source:'Booking', date:'Aug. 2025', rating:5, text:'Ein wunderschönes Apartment im Herzen von Nerja. Sehr sauber, ruhig und liebevoll eingerichtet. Der Strand ist zu Fuß erreichbar.' },
       { name:'Sophie L.', source:'Airbnb', date:'Jul 2025', rating:5, text:'Emplacement parfait, appartement lumineux et très bien équipé. Accueil chaleureux et réservation directe très simple. Je recommande vivement.' },
       { name:'Carlos R.', source:'Google', date:'Jun 2025', rating:5, text:'Perfecto para una escapada en familia. Cómodo, limpio y con todo lo necesario. Sin comisiones y trato cercano de principio a fin.' },
       { name:'Anna K.', source:'Airbnb', date:'May 2025', rating:5, text:'Beautiful, quiet apartment steps from the old town and the beach. Booking directly was effortless and the hosts speak several languages.' }
     ];
     const faq = [
-      { q:'¿Cómo reservo?', a:'Directamente con nosotros por WhatsApp. Nos escribes con tus fechas, confirmamos disponibilidad y te enviamos todos los detalles. Sin plataformas de por medio.' },
-      { q:'¿Hay comisiones o cargos de servicio?', a:'No. Al reservar directamente te ahorras las comisiones de las plataformas: el precio que ves es el que pagas.' },
-      { q:'¿Se admiten mascotas?', a:'Lo sentimos, no se aceptan mascotas en ninguno de los dos apartamentos.' },
-      { q:'¿En qué idiomas atendéis?', a:'Hablamos español, inglés, alemán, francés e italiano. Escríbenos en el idioma que prefieras.' },
-      { q:'¿Cuál es el horario de entrada y salida?', a:'Entrada a partir de las 16:00 h y salida hasta las 11:00 h, con flexibilidad según disponibilidad. Te enviamos las instrucciones de acceso antes de tu llegada.' },
-      { q:'¿Están cerca de la playa?', a:'La Playa de la Torrecilla queda a unos 12 minutos a pie, y el Balcón de Europa y la Playa Burriana algo más allá. Es una zona residencial tranquila, muy cómoda para ir y volver caminando.' },
-      { q:'¿Cómo llego desde el aeropuerto de Málaga?', a:'Nerja está a unos 60 km (aprox. 1 hora en coche). También hay autobuses directos de ALSA desde la estación de Málaga hasta Nerja. Con gusto te orientamos al reservar.' }
+      { q:'Wie buche ich?', a:'Direkt bei uns über WhatsApp. Schreib uns deine Daten, wir bestätigen die Verfügbarkeit und senden dir alle Details. Ohne Plattformen dazwischen.' },
+      { q:'Gibt es Gebühren oder Servicekosten?', a:'Nein. Bei einer Direktbuchung sparst du die Plattformgebühren: Der angezeigte Preis ist der Preis, den du zahlst.' },
+      { q:'Sind Haustiere erlaubt?', a:'Leider sind in keiner der beiden Wohnungen Haustiere erlaubt.' },
+      { q:'Welche Sprachen sprecht ihr?', a:'Wir sprechen Spanisch, Englisch, Deutsch, Französisch und Italienisch. Schreib uns in der Sprache, die dir am liebsten ist.' },
+      { q:'Wie sind die Check-in- und Check-out-Zeiten?', a:'Check-in ab 16:00 Uhr und Check-out bis 11:00 Uhr, je nach Verfügbarkeit flexibel. Die Zugangsinformationen senden wir dir vor deiner Ankunft.' },
+      { q:'Sind sie in Strandnähe?', a:'Der Strand La Torrecilla ist etwa 12 Minuten zu Fuß entfernt, der Balcón de Europa und der Strand Burriana etwas weiter. Es ist ein ruhiges Wohnviertel, ideal, um bequem hin und zurück zu laufen.' },
+      { q:'Wie komme ich vom Flughafen Málaga hierher?', a:'Nerja liegt etwa 60 km entfernt (rund 1 Stunde mit dem Auto). Es gibt auch direkte ALSA-Busse vom Busbahnhof Málaga nach Nerja. Bei der Buchung helfen wir dir gerne weiter.' }
     ];
     const pois = [
-      { name:'Playa de la Torrecilla', detail:'La playa más cercana', time:'12 min a pie' },
-      { name:'Balcón de Europa', detail:'Mirador y centro de Nerja', time:'15 min a pie' },
-      { name:'Playa Burriana', detail:'La playa más animada', time:'18 min a pie' },
-      { name:'Supermercados y cafeterías', detail:'En la propia zona', time:'2 min a pie' },
-      { name:'Cuevas de Nerja', detail:'A las afueras', time:'8 min en coche' }
+      { name:'Playa de la Torrecilla', detail:'Der nächste Strand', time:'12 Min. zu Fuß' },
+      { name:'Balcón de Europa', detail:'Aussichtspunkt und Zentrum von Nerja', time:'15 Min. zu Fuß' },
+      { name:'Playa Burriana', detail:'Der lebhafteste Strand', time:'18 Min. zu Fuß' },
+      { name:'Supermärkte und Cafés', detail:'Direkt im Viertel', time:'2 Min. zu Fuß' },
+      { name:'Cuevas de Nerja', detail:'Am Ortsrand', time:'8 Min. mit dem Auto' }
     ];
     const guideCards = [
-      { tag:'Bienvenida', title:'Nerja, la perla de la Costa del Sol', mins:3,
-        summary:'Un pueblo con encanto entre el mar y la montaña, con un microclima privilegiado y luz todo el año.',
+      { tag:'Willkommen', title:'Nerja, die Perle der Costa del Sol', mins:3,
+        summary:'Ein reizvoller Ort zwischen Meer und Bergen, mit einem privilegierten Mikroklima und Licht das ganze Jahr über.',
         body:[
-          'Nerja se asienta donde la sierra de Almijara baja hasta el Mediterráneo, y ese abrazo entre montaña y mar le regala un microclima suave: temperaturas agradables casi todo el año y muchísimos días de sol.',
-          'Su balcón sobre el mar, el famoso Balcón de Europa, es el corazón del pueblo: un paseo de palmeras asomado a un acantilado con vistas de postal, ideal al atardecer.',
-          'A las afueras están las Cuevas de Nerja, uno de los grandes tesoros naturales de Andalucía, con enormes salas de estalactitas y conciertos en su interior. Y para los nostálgicos, este es el pueblo donde se rodó la mítica serie "Verano Azul".'
+          'Nerja liegt dort, wo die Sierra de Almijara zum Mittelmeer abfällt, und diese Umarmung von Berg und Meer beschert ihm ein mildes Mikroklima: angenehme Temperaturen fast das ganze Jahr und sehr viele Sonnentage.',
+          'Sein Balkon über dem Meer, der berühmte Balcón de Europa, ist das Herz des Ortes: eine von Palmen gesäumte Promenade auf einer Klippe mit Postkartenblick, perfekt bei Sonnenuntergang.',
+          'Am Ortsrand liegen die Höhlen von Nerja, einer der großen Naturschätze Andalusiens, mit riesigen Stalaktitensälen und Konzerten im Inneren. Und für Nostalgiker: Hier wurde die legendäre spanische Serie „Verano Azul“ gedreht.'
         ] },
-      { tag:'Playas', title:'Las mejores playas y calas', mins:4,
-        summary:'Desde las playas urbanas del pueblo hasta las calas vírgenes de Maro. Dónde ir y dónde aparcar.',
+      { tag:'Strände', title:'Die schönsten Strände und Buchten', mins:4,
+        summary:'Von den Ortsstränden bis zu den unberührten Buchten von Maro. Wohin es sich lohnt und wo man parkt.',
         body:[
-          'En el propio pueblo: la Playa de la Torrecilla (la más cercana a casa, unos 12 min a pie), el Playazo (larga y tranquila, con espacio de sobra) y Burriana, la más animada, con chiringuitos donde comer los espetos y el pescaíto junto al agua.',
-          'Rincones con encanto: la pequeña cala de Calahonda bajo el Balcón, y la playa del Chucho o Carabeo, algo más escondidas y con menos gente.',
-          'Calas vírgenes: el paraje natural de Maro-Cerro Gordo, a pocos minutos en coche, esconde algunas de las calas más bonitas del sur —Maro, Cañuelo, Las Alberquillas— de aguas cristalinas, perfectas para snorkel y kayak.',
-          'Aparcamiento: en verano conviene llegar temprano. En Burriana y Maro hay parkings de pago cerca del acceso; entre semana y a primera hora es mucho más fácil encontrar sitio.'
+          'Im Ort: der Strand La Torrecilla (der nächste zur Wohnung, etwa 12 Min. zu Fuß), El Playazo (lang und ruhig, mit viel Platz) und Burriana, der lebhafteste, mit Strandbars, wo du direkt am Wasser Espetos und frittierten Fisch essen kannst.',
+          'Reizvolle Ecken: die kleine Bucht Calahonda unterhalb des Balcón sowie die Strände El Chucho oder Carabeo, etwas versteckter und weniger überlaufen.',
+          'Unberührte Buchten: das Naturschutzgebiet Maro-Cerro Gordo, wenige Autominuten entfernt, verbirgt einige der schönsten Buchten des Südens – Maro, Cañuelo, Las Alberquillas – mit kristallklarem Wasser, perfekt zum Schnorcheln und Kajakfahren.',
+          'Parken: Im Sommer kommt man am besten früh. In Burriana und Maro gibt es kostenpflichtige Parkplätze nahe den Zugängen; unter der Woche und früh am Morgen findet man deutlich leichter einen Platz.'
         ] },
-      { tag:'Dónde comer', title:'Comer y cenar bien', mins:4,
-        summary:'Marisco y pescaíto, carnes, tapas, paellas junto al mar, italianos y sitios con vistas.',
+      { tag:'Wo essen', title:'Gut essen gehen', mins:4,
+        summary:'Meeresfrüchte und frittierter Fisch, Grillfleisch, Tapas, Paella am Meer, Italiener und Lokale mit Aussicht.',
         body:[
-          'Pescado y marisco: los chiringuitos de Burriana son la apuesta segura para espetos de sardinas, fritura malagueña y arroces frente al mar.',
-          'Carnes y tapas: en las calles del centro encontrarás buenas brasas y la clásica ruta de tapas andaluza, con bares donde la caña acompaña siempre a algo rico.',
-          'Paellas y arroces: varios restaurantes junto a la playa los bordan, sobre todo al mediodía; merece la pena reservar en temporada alta.',
-          'Otras cocinas: Nerja tiene una comunidad internacional muy viva, así que no faltan buenos italianos, cocina de fusión y sitios con encanto y vistas al mar para una cena especial.'
+          'Fisch und Meeresfrüchte: Die Strandbars von Burriana sind eine sichere Wahl für Sardinen-Espetos, frittierten Fisch nach Málaga-Art und Reisgerichte direkt am Meer.',
+          'Fleisch und Tapas: In den Gassen des Zentrums findest du gute Grills und die klassische andalusische Tapas-Tour, mit Bars, in denen es zum Bier immer etwas Leckeres gibt.',
+          'Paella und Reisgerichte: Mehrere Restaurants am Strand machen sie hervorragend, vor allem mittags; in der Hochsaison lohnt sich eine Reservierung.',
+          'Andere Küchen: Nerja hat eine lebendige internationale Gemeinschaft, daher fehlt es nicht an guten Italienern, Fusionsküche und reizvollen Lokalen mit Meerblick für ein besonderes Abendessen.'
         ] },
-      { tag:'Desayunos', title:'Desayunos y cafés', mins:2,
-        summary:'Dónde empezar el día: tostadas con tomate, molletes, repostería y cafés con vistas.',
+      { tag:'Frühstück', title:'Frühstück und Kaffee', mins:2,
+        summary:'Wo der Tag beginnt: Toast mit Tomate, Molletes, Gebäck und Kaffee mit Aussicht.',
         body:[
-          'Para el clásico andaluz —tostada con tomate y aceite o un mollete— hay cafeterías estupendas en el centro y cerca del Balcón de Europa.',
-          'Si te gusta desayunar con calma, busca las terrazas con vistas al mar: café, zumo recién hecho y el Mediterráneo de fondo. Un buen plan antes de bajar a la playa.'
+          'Für den andalusischen Klassiker – Toast mit Tomate und Olivenöl oder ein Mollete – gibt es tolle Cafés im Zentrum und nahe dem Balcón de Europa.',
+          'Wenn du gern gemütlich frühstückst, suche Terrassen mit Meerblick: Kaffee, frisch gepresster Saft und das Mittelmeer als Kulisse. Ein schöner Plan, bevor es an den Strand geht.'
         ] },
-      { tag:'Escapadas', title:'Pueblos blancos y alrededores', mins:4,
-        summary:'Frigiliana, El Acebuchal, Torrox, Cómpeta, Comares… la Axarquía a un paso.',
+      { tag:'Ausflüge', title:'Weiße Dörfer und Umgebung', mins:4,
+        summary:'Frigiliana, El Acebuchal, Torrox, Cómpeta, Comares … die Axarquía nur einen Schritt entfernt.',
         body:[
-          'Frigiliana: a solo 10 minutos, uno de los pueblos más bonitos de España, un laberinto de callejuelas blancas, flores y rincones con vistas. Imprescindible.',
-          'El Acebuchal: el "pueblo del fantasma", una aldea recuperada entre montañas, perfecta para comer de campo un fin de semana.',
-          'Torrox, Cómpeta y Comares: pueblos blancos de la Axarquía rodeados de viñas y olivos, con miradores espectaculares y mucho vino moscatel. Ideales para una excursión de medio día en coche.'
+          'Frigiliana: nur 10 Minuten entfernt, eines der schönsten Dörfer Spaniens – ein Labyrinth aus weißen Gassen, Blumen und Ecken mit Aussicht. Ein Muss.',
+          'El Acebuchal: das „Geisterdorf“, ein zwischen den Bergen wieder aufgebauter Weiler, perfekt für ein rustikales Mittagessen am Wochenende.',
+          'Torrox, Cómpeta und Comares: weiße Dörfer der Axarquía, umgeben von Weinbergen und Olivenhainen, mit spektakulären Aussichtspunkten und viel Moscatel-Wein. Ideal für einen halben Tag mit dem Auto.'
         ] },
-      { tag:'Práctico', title:'Llegada, parking y cómo moverse', mins:3,
-        summary:'Cómo llegar desde Málaga, dónde aparcar y moverte por Nerja durante tu estancia.',
+      { tag:'Praktisches', title:'Anreise, Parken und Mobilität', mins:3,
+        summary:'Wie du von Málaga hierher kommst, wo du parkst und wie du dich während deines Aufenthalts in Nerja bewegst.',
         body:[
-          'En coche: Nerja está a una hora de Málaga y su aeropuerto por la A-7. Nuestra calle, Joaquín Herrera, es una zona residencial tranquila donde suele ser fácil aparcar en la vía; también hay parkings públicos hacia el centro.',
-          'En autobús: ALSA conecta Málaga y el aeropuerto con la estación de Nerja de forma directa y frecuente.',
-          'Nerja se disfruta a pie: desde casa llegas caminando a la playa, al centro y al Balcón de Europa. Para las calas de Maro y los pueblos blancos, el coche es lo más cómodo.'
+          'Mit dem Auto: Nerja liegt eine Stunde von Málaga und seinem Flughafen über die A-7 entfernt. Unsere Straße, Joaquín Herrera, ist ein ruhiges Wohnviertel, in dem man meist leicht am Straßenrand parkt; Richtung Zentrum gibt es auch öffentliche Parkhäuser.',
+          'Mit dem Bus: ALSA verbindet Málaga und den Flughafen direkt und häufig mit dem Busbahnhof von Nerja.',
+          'Nerja genießt man am besten zu Fuß: Von der Wohnung aus erreichst du Strand, Zentrum und Balcón de Europa zu Fuß. Für die Buchten von Maro und die weißen Dörfer ist ein Auto am bequemsten.'
         ] },
-      { tag:'Contacto', title:'Cualquier cosa, escríbenos', mins:1,
-        summary:'Estamos a un mensaje de distancia durante toda tu estancia.',
-        body:['Para lo que necesites —recomendaciones, una incidencia o ampliar tu estancia— escríbenos por WhatsApp al +34 609 549 664. Respondemos en español, inglés, alemán, francés e italiano.'] }
+      { tag:'Kontakt', title:'Was auch immer du brauchst, schreib uns einfach', mins:1,
+        summary:'Während deines gesamten Aufenthalts sind wir nur eine Nachricht entfernt.',
+        body:['Für alles, was du brauchst – Empfehlungen, ein Problem oder eine Verlängerung deines Aufenthalts – schreib uns über WhatsApp unter +34 609 549 664. Wir antworten auf Spanisch, Englisch, Deutsch, Französisch und Italienisch.'] }
     ];
     return {
       navStyle, navInk, navSub, navLinks,
@@ -3489,8 +3489,8 @@ class Component extends DCLogic {
       goGuia:(e)=>{e.preventDefault();this.go('guia');},
       viewFlorence: props.florence, viewIsolde: props.isolde,
       homeCards: [
-        { name:props.florence.name, cover:props.florence.cover, door:props.florence.door, kicker:props.florence.kicker, tagline:props.florence.tagline, guests:props.florence.guests, beds: props.florence.bedrooms+' dormitorio', onClick:(e)=>{e.preventDefault();this.go('property','florence');} },
-        { name:props.isolde.name, cover:props.isolde.cover, door:props.isolde.door, kicker:props.isolde.kicker, tagline:props.isolde.tagline, guests:props.isolde.guests, beds: props.isolde.bedrooms+' dormitorios', onClick:(e)=>{e.preventDefault();this.go('property','isolde');} }
+        { name:props.florence.name, cover:props.florence.cover, door:props.florence.door, kicker:props.florence.kicker, tagline:props.florence.tagline, guests:props.florence.guests, beds: props.florence.bedrooms+' Schlafzimmer', onClick:(e)=>{e.preventDefault();this.go('property','florence');} },
+        { name:props.isolde.name, cover:props.isolde.cover, door:props.isolde.door, kicker:props.isolde.kicker, tagline:props.isolde.tagline, guests:props.isolde.guests, beds: props.isolde.bedrooms+' Schlafzimmer', onClick:(e)=>{e.preventDefault();this.go('property','isolde');} }
       ],
       seeCasas:(e)=>{e.preventDefault();this.scrollToId('casas');},
       seeUbicacion:(e)=>{e.preventDefault();this.scrollToId('ubicacion');},
@@ -3503,7 +3503,7 @@ class Component extends DCLogic {
       faq: faq.map((f,i)=>({ ...f, open: this.state.faqOpen===i, rot: this.state.faqOpen===i?'rotate(45deg)':'none', onClick:()=>this.setState(s=>({faqOpen: s.faqOpen===i?null:i})) })),
       pois, guideCards,
       guideTeaser: guideCards.slice(0,3).map(g=>({ title:g.title, mins:g.mins })),
-      guideItems: guideCards.map((g,i)=>({ ...g, num:String(i+1).padStart(2,'0'), open: this.state.guideOpen===i, label: this.state.guideOpen===i?'Cerrar':'Leer completo', rot: this.state.guideOpen===i?'rotate(45deg)':'none', onClick:()=>this.setState(s=>({guideOpen: s.guideOpen===i?null:i})) })),
+      guideItems: guideCards.map((g,i)=>({ ...g, num:String(i+1).padStart(2,'0'), open: this.state.guideOpen===i, label: this.state.guideOpen===i?'Schließen':'Mehr lesen', rot: this.state.guideOpen===i?'rotate(45deg)':'none', onClick:()=>this.setState(s=>({guideOpen: s.guideOpen===i?null:i})) })),
       waGuiaLink: this.wa('Hola, tengo una consulta sobre mi estancia en ZeltmannHome (Nerja).'),
       guideOpen: this.state.guideOpen,
       toggleGuide:(i)=>this.setState(s=>({guideOpen: s.guideOpen===i?null:i})),
