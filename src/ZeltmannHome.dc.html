@@ -112,6 +112,7 @@
         <div style="position:relative;aspect-ratio:4 / 5;overflow:hidden;border:1px solid rgba(11,42,68,.08);background:#DCC8A1">
           <sc-for list="{{ heroSlides }}" as="slide" hint-placeholder-count="5">
             <div style="position:absolute;inset:0;background:{{ slide.grad }};opacity:{{ slide.op }};transition:opacity 1.4s ease">
+              <sc-if value="{{ slide.src }}"><img src="{{ slide.src }}" alt="{{ slide.label }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></sc-if>
               <div style="position:absolute;inset:0;background:radial-gradient(circle at 32% 26%,rgba(255,255,255,.4),transparent 58%)"></div>
             </div>
           </sc-for>
@@ -195,6 +196,7 @@
         <sc-for list="{{ homeCards }}" as="c" hint-placeholder-count="2">
           <a href="#" onClick="{{ c.onClick }}" style="display:block;background:#F7F5F2;border:1px solid rgba(11,42,68,.1);text-decoration:none;overflow:hidden" data-reveal>
             <div style="position:relative;aspect-ratio:16 / 11;background:linear-gradient(150deg,#EADFC8,#DCC8A1 60%,#C9B488);overflow:hidden">
+              <sc-if value="{{ c.cover }}"><img src="{{ c.cover }}" alt="{{ c.name }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></sc-if>
               <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 26%,rgba(255,255,255,.4),transparent 60%)"></div>
               <div style="position:absolute;top:14px;left:14px;background:rgba(247,245,242,.92);padding:6px 11px;font:600 10.5px 'Inter';letter-spacing:.14em;text-transform:uppercase;color:#0B2A44">{{ c.door }}</div>
               <div style="position:absolute;bottom:14px;right:14px;display:flex;align-items:center;gap:6px;background:rgba(11,42,68,.86);color:#F7F5F2;padding:6px 11px;font:600 11px 'Inter'">
@@ -308,8 +310,9 @@
         <p style="font-size:16.5px;line-height:1.7;color:rgba(247,245,242,.78);margin:0 0 30px;max-width:32em">Llegada, cómo funciona la casa, nuestros rincones favoritos de Nerja y cómo contactarnos. Tarjetas breves con minutos de lectura, para consultar justo lo que necesitas.</p>
         <a href="#" onClick="{{ goGuia }}" style="display:inline-flex;align-items:center;gap:10px;background:#DCC8A1;color:#0B2A44;padding:15px 28px;border-radius:2px;font-weight:600;font-size:15px">Abrir la guía <span style="font-size:16px">→</span></a>
       </div>
-      <div style="position:relative;min-height:280px;background:linear-gradient(150deg,#12405f,#0B2A44);align-self:stretch">
-        <div style="position:absolute;inset:0;background:radial-gradient(circle at 60% 30%,rgba(220,200,161,.3),transparent 55%)"></div>
+      <div style="position:relative;min-height:280px;background:linear-gradient(150deg,#12405f,#0B2A44);align-self:stretch;overflow:hidden">
+        <img src="img/nerja/guia.webp" alt="Nerja" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(11,42,68,.82),rgba(11,42,68,.25) 60%,rgba(11,42,68,.45))"></div>
         <div style="position:absolute;left:24px;right:24px;bottom:24px;display:flex;flex-direction:column;gap:10px">
           <sc-for list="{{ guideTeaser }}" as="g" hint-placeholder-count="3">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(247,245,242,.1);border:1px solid rgba(247,245,242,.16);padding:12px 16px">
@@ -360,7 +363,8 @@
   <section style="background:#F7F5F2;padding:0 24px 20px">
     <div style="max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px" data-gallery>
       <sc-for list="{{ galleryItems }}" as="g" hint-placeholder-count="6">
-        <button onClick="{{ g.onClick }}" aria-label="Ampliar foto" style="position:relative;aspect-ratio:4 / 3;background:linear-gradient(150deg,#EADFC8,#DCC8A1 62%,#C9B488);border:1px solid rgba(11,42,68,.08);cursor:pointer;overflow:hidden;padding:0">
+        <button onClick="{{ g.onClick }}" aria-label="Ampliar foto {{ g.label }}" style="position:relative;aspect-ratio:4 / 3;background:linear-gradient(150deg,#EADFC8,#DCC8A1 62%,#C9B488);border:1px solid rgba(11,42,68,.08);cursor:pointer;overflow:hidden;padding:0">
+          <sc-if value="{{ g.src }}"><img src="{{ g.src }}" alt="{{ g.label }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></sc-if>
           <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.38),transparent 60%)"></div>
           <span style="position:absolute;left:12px;bottom:12px;font:600 10px 'Inter';letter-spacing:.16em;text-transform:uppercase;color:#0B2A44;background:rgba(247,245,242,.9);padding:5px 9px">{{ g.label }}</span>
           <span style="position:absolute;right:12px;top:12px;width:30px;height:30px;display:grid;place-items:center;background:rgba(11,42,68,.82);color:#F7F5F2;border-radius:2px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
@@ -506,8 +510,8 @@
       <button onClick="{{ closeLb }}" aria-label="Cerrar galería" style="width:44px;height:44px;background:transparent;border:1px solid rgba(247,245,242,.25);border-radius:2px;color:#F7F5F2;font-size:20px;cursor:pointer">✕</button>
     </div>
     <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:14px;min-height:0" onClick="{{ closeLb }}">
-      <div style="width:min(1000px,90vw);aspect-ratio:{{ lbCurrent.ratio }};max-height:78vh;background:linear-gradient(150deg,#EADFC8,#C9B488);position:relative;border:1px solid rgba(247,245,242,.12)">
-        <div style="position:absolute;inset:0;display:grid;place-items:center;color:#0B2A44;font:600 12px 'Inter';letter-spacing:.16em;text-transform:uppercase">{{ lbCurrent.label }} · foto</div>
+      <div style="width:min(1000px,90vw);aspect-ratio:{{ lbCurrent.ratio }};max-height:78vh;background:linear-gradient(150deg,#EADFC8,#C9B488);position:relative;border:1px solid rgba(247,245,242,.12);overflow:hidden">
+        <sc-if value="{{ lbCurrent.src }}"><img src="{{ lbCurrent.src }}" alt="{{ lbCurrent.label }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></sc-if>
       </div>
     </div>
     <div style="display:flex;justify-content:center;gap:12px;padding-top:8px">
@@ -587,11 +591,11 @@ class Component extends DCLogic {
   state = { page: 'home', activeSlug: 'florence', menuOpen: false, scrolled: false, review: 0, faqOpen: 0, lb: false, lbImgs: [], lbIdx: 0, guideOpen: null, heroSlide: 0 };
   mapRef = React.createRef();
   heroSlides = [
-    { label:'Balcón de Europa', grad:'linear-gradient(150deg,#EADFC8,#DCC8A1 62%,#C9B488)' },
-    { label:'Playa Burriana', grad:'linear-gradient(150deg,#CFE0DC,#A9C6C0 58%,#7FA8A0)' },
-    { label:'Frigiliana', grad:'linear-gradient(150deg,#EBD9C4,#D8B89A 60%,#BE9A78)' },
-    { label:'Cuevas de Nerja', grad:'linear-gradient(150deg,#D9CFC0,#B9AC98 60%,#9A8C76)' },
-    { label:'Calas de Maro', grad:'linear-gradient(150deg,#CDE1E6,#98C0CC 58%,#6C9AA8)' }
+    { label:'Balcón de Europa', src:'img/nerja/balcon.webp', grad:'linear-gradient(150deg,#EADFC8,#DCC8A1 62%,#C9B488)' },
+    { label:'Playa Burriana', src:'img/nerja/burriana.webp', grad:'linear-gradient(150deg,#CFE0DC,#A9C6C0 58%,#7FA8A0)' },
+    { label:'Frigiliana', src:'img/nerja/frigiliana.webp', grad:'linear-gradient(150deg,#EBD9C4,#D8B89A 60%,#BE9A78)' },
+    { label:'Cuevas de Nerja', src:'img/nerja/cuevas.webp', grad:'linear-gradient(150deg,#D9CFC0,#B9AC98 60%,#9A8C76)' },
+    { label:'Calas de Maro', src:'img/nerja/maro.webp', grad:'linear-gradient(150deg,#CDE1E6,#98C0CC 58%,#6C9AA8)' }
   ];
   _startHero(){
     if (this._reduced()) return;
@@ -706,7 +710,8 @@ class Component extends DCLogic {
           loc,
           stay
         ],
-        gallery:[{label:'Salón',ratio:'4 / 3'},{label:'Dormitorio',ratio:'1 / 1'},{label:'Cocina',ratio:'1 / 1'},{label:'Salón · sofás cama',ratio:'4 / 3'},{label:'Baño',ratio:'1 / 1'},{label:'Detalle',ratio:'1 / 1'}],
+        cover:'img/florence/cover.webp',
+        gallery:[{label:'Salón',ratio:'4 / 3',src:'img/florence/salon.webp'},{label:'Dormitorio',ratio:'1 / 1',src:'img/florence/dormitorio.webp'},{label:'Cocina',ratio:'1 / 1',src:'img/florence/cocina.webp'},{label:'Salón · sofás cama',ratio:'4 / 3',src:'img/florence/salon-sofas.webp'},{label:'Baño',ratio:'1 / 1',src:'img/florence/bano.webp'},{label:'Detalle',ratio:'1 / 1',src:'img/florence/detalle.webp'}],
         amenities: amen(AMEN) },
       isolde: { ...shared, slug:'isolde', name:'Casa Isolde', door:'Pta. A', vft:'VUT/MA/97478', guests:4, bedrooms:2, baths:1, m2:55, bedsLabel:'2 dormitorios',
         kicker:'VIVIENDA COMPLETA · NERJA',
@@ -717,7 +722,8 @@ class Component extends DCLogic {
           loc,
           stay
         ],
-        gallery:[{label:'Salón',ratio:'4 / 3'},{label:'Dormitorio principal',ratio:'1 / 1'},{label:'Dormitorio · 2 camas',ratio:'1 / 1'},{label:'Cocina',ratio:'4 / 3'},{label:'Baño',ratio:'1 / 1'},{label:'Detalle',ratio:'1 / 1'}],
+        cover:'img/isolde/cover.webp',
+        gallery:[{label:'Salón',ratio:'4 / 3',src:'img/isolde/salon.webp'},{label:'Dormitorio principal',ratio:'1 / 1',src:'img/isolde/dormitorio.webp'},{label:'Dormitorio · 2 camas',ratio:'1 / 1',src:'img/isolde/dormitorio2.webp'},{label:'Cocina',ratio:'4 / 3',src:'img/isolde/cocina.webp'},{label:'Baño',ratio:'1 / 1',src:'img/isolde/bano.webp'},{label:'Detalle',ratio:'1 / 1',src:'img/isolde/detalle.webp'}],
         amenities: amen(AMEN) }
     };
   }
@@ -839,8 +845,8 @@ class Component extends DCLogic {
       goGuia:(e)=>{e.preventDefault();this.go('guia');},
       viewFlorence: props.florence, viewIsolde: props.isolde,
       homeCards: [
-        { name:props.florence.name, door:props.florence.door, kicker:props.florence.kicker, tagline:props.florence.tagline, guests:props.florence.guests, beds: props.florence.bedrooms+' dormitorio', onClick:(e)=>{e.preventDefault();this.go('property','florence');} },
-        { name:props.isolde.name, door:props.isolde.door, kicker:props.isolde.kicker, tagline:props.isolde.tagline, guests:props.isolde.guests, beds: props.isolde.bedrooms+' dormitorios', onClick:(e)=>{e.preventDefault();this.go('property','isolde');} }
+        { name:props.florence.name, cover:props.florence.cover, door:props.florence.door, kicker:props.florence.kicker, tagline:props.florence.tagline, guests:props.florence.guests, beds: props.florence.bedrooms+' dormitorio', onClick:(e)=>{e.preventDefault();this.go('property','florence');} },
+        { name:props.isolde.name, cover:props.isolde.cover, door:props.isolde.door, kicker:props.isolde.kicker, tagline:props.isolde.tagline, guests:props.isolde.guests, beds: props.isolde.bedrooms+' dormitorios', onClick:(e)=>{e.preventDefault();this.go('property','isolde');} }
       ],
       seeCasas:(e)=>{e.preventDefault();this.scrollToId('casas');},
       seeUbicacion:(e)=>{e.preventDefault();this.scrollToId('ubicacion');},
