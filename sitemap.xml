@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://zeltmannhome-nerja.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zeltmannhome-nerja.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zeltmannhome-nerja.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zeltmannhome-nerja.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zeltmannhome-nerja.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://zeltmannhome-nerja.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zeltmannhome-nerja.vercel.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zeltmannhome-nerja.vercel.app/"/>
+  </url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/en/</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/de/</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/fr/</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/it/</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/ru/</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/aviso-legal.html</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/privacidad.html</loc></url>
+  <url><loc>https://zeltmannhome-nerja.vercel.app/cookies.html</loc></url>
+</urlset>
