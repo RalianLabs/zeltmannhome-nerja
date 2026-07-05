@@ -646,12 +646,17 @@ class Component extends DCLogic {
         : '<div style="display:flex;align-items:center;gap:6px;transform:translate(-9px,-9px)"><div style="width:12px;height:12px;border-radius:50%;background:#F7F5F2;border:2.5px solid #103A5C"></div><div style="font:600 10.5px Inter;letter-spacing:.03em;color:#0B2A44;background:rgba(247,245,242,.9);padding:2px 6px;border-radius:2px;white-space:nowrap">'+label+'</div></div>';
       L.marker([lat,lng], { icon: L.divIcon({ html, className:'', iconSize:[0,0] }) }).addTo(map);
     };
-    mk(36.7459,-3.8770,'ZeltmannHome',true);
-    mk(36.7436,-3.8759,'Balcón de Europa');
-    mk(36.7388,-3.8688,'Playa Burriana');
-    mk(36.7421,-3.8828,'Playa Torrecilla');
+    const pts = [
+      [36.7515,-3.8777,'ZeltmannHome',true],
+      [36.7443,-3.8754,'Balcón de Europa'],
+      [36.7455,-3.8670,'Playa Burriana'],
+      [36.7422,-3.8819,'Playa Torrecilla']
+    ];
+    pts.forEach(p=>mk(p[0],p[1],p[2],p[3]));
+    const fit=()=>map.fitBounds(pts.map(p=>[p[0],p[1]]), { padding:[45,45], maxZoom:16 });
+    fit();
     el._zhmap = map;
-    setTimeout(()=>map.invalidateSize(), 250);
+    setTimeout(()=>{ map.invalidateSize(); fit(); }, 250);
   }
 
   go(page, slug){ this.setState({ page, activeSlug: slug || this.state.activeSlug, menuOpen:false }); window.scrollTo({ top:0, behavior: this._reduced()?'auto':'smooth' }); }
@@ -680,6 +685,7 @@ class Component extends DCLogic {
       beach:['M12 3a9 9 0 0 0-9 9','M12 3a9 9 0 0 1 5 3','M12 3v18','M3 20h18'],
       parking:['M5 3h14v18H5z','M9 8h4a2 2 0 0 1 0 4H9zM9 8v8'],
       key:['M15 7a4 4 0 1 0-3.9 5H14l2 2 2-2 2 2 2-2-2-2'],
+      dryer:['M13 5a5 5 0 0 1 0 10H8a5 5 0 0 1-5-5 5 5 0 0 1 5-5z','M13 7h6l-2.5 3','M9 15l1 4a2 2 0 0 0 4-.5'],
       check:['M20 6 9 17l-5-5']
     };
     const paths = P[name] || P.check;
@@ -696,6 +702,7 @@ class Component extends DCLogic {
       {icon:'tv',label:'Smart TV 65" + TV en dormitorio'},
       {icon:'washer',label:'Lavadora y lavavajillas'},
       {icon:'towel',label:'Ropa de cama y toallas'},
+      {icon:'dryer',label:'Secador de pelo'},
       {icon:'key',label:'Check-in personal con el propietario'},
       {icon:'beach',label:'A 12 min a pie de la playa'},
       {icon:'check',label:'Detector de humo y botiquín'}
