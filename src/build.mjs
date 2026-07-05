@@ -128,6 +128,15 @@ function buildLang(lang) {
     html = tpl + scr;
   }
 
+  // 1b) inject the per-language guest guide (falls back to Spanish if a
+  //     language has not been translated yet). Injected after the dictionary
+  //     pass so the already-translated guide is left untouched.
+  const guidePath = join(here, 'i18n', 'guide', `${lang}.json`);
+  const guideSrc = existsSync(guidePath) ? guidePath : join(here, 'i18n', 'guide', 'es.json');
+  const guideJson = JSON.stringify(JSON.parse(readFileSync(guideSrc, 'utf8')));
+  if (!html.includes('__GUIDE__')) throw new Error('__GUIDE__ placeholder not found in source');
+  html = html.replace('__GUIDE__', () => guideJson);
+
   // 2) language switcher
   html = html.split('<!--LANG-SWITCHER-->').join(switcher(lang, 'desktop'));
   html = html.split('<!--LANG-SWITCHER-MOBILE-->').join(switcher(lang, 'mobile'));
