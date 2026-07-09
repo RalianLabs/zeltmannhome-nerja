@@ -81,6 +81,22 @@
     ]
   },
   {
+    "tag": "Check-out",
+    "title": "Check-out-Anweisungen",
+    "mins": 2,
+    "summary": "Eine kurze Liste, um die Wohnung am Abreisetag ordentlich zu hinterlassen. Der Check-out ist vor 10:00 Uhr.",
+    "body": [
+      "Am Abreisetag bitten wir dich, die Wohnung vor 10:00 Uhr zu verlassen. Mit diesen einfachen Schritten hilfst du uns, alles für die nächsten Gäste vorzubereiten.",
+      "Müll: Bring den gesamten Müll, auch den aus dem Bad, zu den Containern auf der Straße.",
+      "Kühlschrank: Entferne geöffnete oder verderbliche Lebensmittel, die du zurückgelassen hast.",
+      "Geschirr: Lass Teller, Gläser und Besteck sauber und in den Schränken verstaut.",
+      "Strom: Schalte die Klimaanlage und alle Lichter aus, innen und außen.",
+      "Abschließen: Schließe alle Türen und Fenster gut.",
+      "Schlüssel: Lass einen Schlüssel am weißen Schlüsselbrett. Schließ die Tür mit dem anderen Schlüssel ab und wirf ihn in den Briefkasten daneben.",
+      "Bei Fragen in letzter Minute schreib uns per WhatsApp an +34 609 549 664. Gute Reise!"
+    ]
+  },
+  {
     "tag": "Kontakt",
     "title": "Was auch immer du brauchst, schreib uns",
     "mins": 1,

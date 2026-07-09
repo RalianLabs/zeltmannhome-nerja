@@ -81,6 +81,22 @@
     ]
   },
   {
+    "tag": "Départ",
+    "title": "Instructions de départ (check-out)",
+    "mins": 2,
+    "summary": "Une petite liste pour laisser l'appartement prêt le jour de votre départ. Le départ se fait avant 10h00.",
+    "body": [
+      "Le jour du départ, nous vous demandons de quitter l'appartement avant 10h00. Ces quelques gestes simples nous aident à tout préparer pour les prochains voyageurs.",
+      "Poubelles : sortez toutes les poubelles, y compris celle de la salle de bains, vers les conteneurs de la rue.",
+      "Réfrigérateur : retirez les aliments ouverts ou périssables que vous avez laissés.",
+      "Vaisselle : laissez les assiettes, verres et couverts propres et rangés dans les placards.",
+      "Électricité : éteignez la climatisation et toutes les lumières, à l'intérieur comme à l'extérieur.",
+      "Fermeture : fermez bien toutes les portes et fenêtres.",
+      "Clés : laissez une clé sur le porte-clés blanc. Fermez la porte avec l'autre clé et déposez-la dans la boîte aux lettres à côté.",
+      "Pour toute question de dernière minute, écrivez-nous sur WhatsApp au +34 609 549 664. Bon voyage !"
+    ]
+  },
+  {
     "tag": "Contact",
     "title": "Pour tout, écrivez-nous",
     "mins": 1,

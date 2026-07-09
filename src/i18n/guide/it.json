@@ -81,6 +81,22 @@
     ]
   },
   {
+    "tag": "Partenza",
+    "title": "Istruzioni per la partenza (check-out)",
+    "mins": 2,
+    "summary": "Un piccolo elenco per lasciare l'appartamento in ordine il giorno della partenza. Il check-out è entro le 10:00.",
+    "body": [
+      "Il giorno della partenza ti chiediamo di lasciare l'appartamento entro le 10:00. Con questi semplici passaggi ci aiuti ad avere tutto pronto per i prossimi ospiti.",
+      "Rifiuti: porta tutti i rifiuti, compresi quelli del bagno, ai contenitori in strada.",
+      "Frigorifero: togli gli alimenti aperti o deperibili che hai lasciato.",
+      "Stoviglie: lascia piatti, bicchieri e posate puliti e riposti negli armadietti.",
+      "Elettricità: spegni l'aria condizionata e tutte le luci, interne ed esterne.",
+      "Chiusura: chiudi bene tutte le porte e le finestre.",
+      "Chiavi: lascia una chiave sul portachiavi bianco. Chiudi la porta con l'altra chiave e mettila nella cassetta della posta accanto.",
+      "Per qualsiasi domanda dell'ultimo minuto, scrivici su WhatsApp al +34 609 549 664. Buon viaggio!"
+    ]
+  },
+  {
     "tag": "Contatti",
     "title": "Per qualsiasi cosa, scrivici",
     "mins": 1,

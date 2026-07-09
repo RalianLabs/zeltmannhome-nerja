@@ -81,6 +81,22 @@
     ]
   },
   {
+    "tag": "Check-out",
+    "title": "Check-out instructions",
+    "mins": 2,
+    "summary": "A short list to leave the apartment ready on your departure day. Check-out is before 10:00 am.",
+    "body": [
+      "On your departure day we ask you to leave the apartment before 10:00 am. These simple steps help us have everything ready for the next guests.",
+      "Rubbish: take out all the rubbish, including the bathroom bin, to the street containers.",
+      "Fridge: remove any open or perishable food you have left.",
+      "Dishes: leave the plates, glasses and cutlery clean and put away in the cupboards.",
+      "Electricity: switch off the air conditioning and all the lights, indoors and outdoors.",
+      "Closing up: close all doors and windows properly.",
+      "Keys: leave one key on the white key rack. Lock the door with the other key and drop it into the mailbox next to it.",
+      "Any last-minute questions, message us on WhatsApp at +34 609 549 664. Have a safe trip!"
+    ]
+  },
+  {
     "tag": "Contact",
     "title": "Anything at all, just message us",
     "mins": 1,

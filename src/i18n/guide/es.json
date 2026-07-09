@@ -81,6 +81,22 @@
     ]
   },
   {
+    "tag": "Salida",
+    "title": "Instrucciones de salida (check-out)",
+    "mins": 2,
+    "summary": "Una pequeña lista para dejar el apartamento a punto el día de tu marcha. La salida es antes de las 10:00 h.",
+    "body": [
+      "El día de salida te pedimos dejar el apartamento antes de las 10:00 h. Con estos sencillos pasos nos ayudas a dejarlo todo listo para los siguientes huéspedes.",
+      "Basura: saca toda la basura, incluida la del baño, a los contenedores de la calle.",
+      "Frigorífico: retira los alimentos abiertos o perecederos que hayas dejado.",
+      "Vajilla: deja los platos, vasos y cubiertos limpios y guardados en los armarios.",
+      "Electricidad: apaga el aire acondicionado y todas las luces, interiores y exteriores.",
+      "Cierre: cierra bien todas las puertas y ventanas.",
+      "Llaves: deja una llave en el llavero blanco. Cierra la puerta con la otra llave y déjala en el buzón de al lado.",
+      "Cualquier duda de última hora, escríbenos por WhatsApp al +34 609 549 664. ¡Buen viaje!"
+    ]
+  },
+  {
     "tag": "Contacto",
     "title": "Cualquier cosa, escríbenos",
     "mins": 1,
